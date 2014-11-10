@@ -152,7 +152,15 @@ HEADER STYLES
 *********************/
 
 .header {
-	background-color: $black;
+	background-color: $blue;
+	height: 182px;
+	@include css-gradient(#70a1d7,#8fb1d7);
+}
+
+.top-menu{
+	background: $red;
+	@include css-gradient(#585858,#3d3d3d);
+
 }
 
 	#logo {
