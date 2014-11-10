@@ -62,3 +62,4 @@ $RECYCLE.BIN/
 *.rb
 library/scss/compass_app_log.txt
 library/scss/compass_app_log.txt
+*.txt
