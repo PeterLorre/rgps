@@ -20,7 +20,7 @@ body {
 	font-size: 100%;
 	line-height: 1.5;
 	color: $text-color;
-	background-color: $gray;
+	background-color: $light-blue;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -157,8 +157,7 @@ HEADER STYLES
 }
 
 .top-menu{
-	background: $red;
-	@include css-gradient(#585858,#3d3d3d);
+	background: $dark-gray;
 	ul{
 		float: right;
 	}
@@ -886,7 +885,7 @@ FOOTER STYLES
 
 .footer {
 	clear: both;
-	background-color: $black;
+	background-color: $dark-gray;
 	color: $light-gray;
 }
 
