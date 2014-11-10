@@ -45,7 +45,7 @@
 	<body <?php body_class(); ?>>
 
 		<div id="container">
-		
+
 			<div class="top-menu cf">
 				<?php wp_nav_menu(array(
 				'container' => false,                           // remove nav container
@@ -70,7 +70,15 @@
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 					<a class="logo" href="<?php echo home_url(); ?>" rel="nofollow"><?php echo bloginfo('name'); ?><img src="<?php echo get_template_directory_uri(); ?>/library/images/logo.png" alt="<?php echo bloginfo('name'); ?>" /></a>
 
-					<?php // if you'd like to use the site description you can un-comment it below ?>
+					<!-- Phone Number -->
+					<?php
+					if ( wp_is_mobile() ) {
+						echo '<a class="phone-header" href="tel:+1-800-345-6789">1-800-345-6789</a>';
+					}
+					else{
+						echo '<p class="phone-header">1-800-345-6789</p>';
+					}
+					?>
 					<?php // bloginfo('description'); ?>
 
 
