@@ -1,0 +1,62 @@
+2014-11-10 10:35:07    create ../css/admin.css 
+2014-11-10 10:35:08    create ../css/editor-style.css 
+2014-11-10 10:35:08 overwrite ../css/ie.css 
+2014-11-10 10:35:08 overwrite ../css/style.css 
+2014-11-10 10:36:13     error editor-style.scss (Line 35: Undefined variable: "$lato".)
+2014-11-10 10:36:13 overwrite ../css/editor-style.css 
+2014-11-10 10:36:13 identical ../css/ie.css 
+2014-11-10 10:36:13     error style.scss (Line 54 of modules/_forms.scss: Undefined variable: "$lato".)
+2014-11-10 10:36:13 overwrite ../css/style.css 
+2014-11-10 10:36:39     error editor-style.scss (Line 35: Undefined variable: "$source-sans-pro".)
+2014-11-10 10:36:39 overwrite ../css/editor-style.css 
+2014-11-10 10:37:09     error style.scss (Line 54 of modules/_forms.scss: Undefined variable: "$lato".)
+2014-11-10 10:37:09 identical ../css/style.css 
+2014-11-10 11:13:24     error style.scss (Line 54 of modules/_forms.scss: Undefined variable: "$lato".)
+2014-11-10 11:13:24 identical ../css/style.css 
+2014-11-10 11:13:57     error style.scss (Line 19 of breakpoints/_base.scss: Undefined variable: "$source-sans-pro".)
+2014-11-10 11:13:57 overwrite ../css/style.css 
+2014-11-10 11:14:01     error style.scss (Line 19 of breakpoints/_base.scss: Undefined variable: "$source-sans-pro".)
+2014-11-10 11:14:01 identical ../css/style.css 
+2014-11-10 11:14:43 overwrite ../css/editor-style.css 
+2014-11-10 11:14:43 identical ../css/ie.css 
+2014-11-10 11:14:43     error style.scss (Line 54 of modules/_forms.scss: Undefined variable: "$sourc-sans-pro".)
+2014-11-10 11:14:43 overwrite ../css/style.css 
+2014-11-10 11:15:18 overwrite ../css/style.css 
+2014-11-10 11:16:05 overwrite ../css/style.css 
+2014-11-10 11:23:07 identical ../css/style.css 
+2014-11-10 11:25:02 overwrite ../css/editor-style.css 
+2014-11-10 11:25:02 identical ../css/ie.css 
+2014-11-10 11:25:02 overwrite ../css/style.css 
+2014-11-10 11:27:32     error editor-style.scss (Line 42 of partials/_variables.scss: Undefined variable: "$rgps-pink".)
+2014-11-10 11:27:32 overwrite ../css/editor-style.css 
+2014-11-10 11:27:32     error ie.scss (Line 42 of partials/_variables.scss: Undefined variable: "$rgps-pink".)
+2014-11-10 11:27:32 overwrite ../css/ie.css 
+2014-11-10 11:27:32     error style.scss (Line 42 of partials/_variables.scss: Undefined variable: "$rgps-pink".)
+2014-11-10 11:27:32 overwrite ../css/style.css 
+2014-11-10 11:29:07     error editor-style.scss (Line 43 of partials/_variables.scss: Undefined variable: "$rgps-pink".)
+2014-11-10 11:29:07 overwrite ../css/editor-style.css 
+2014-11-10 11:29:07     error ie.scss (Line 43 of partials/_variables.scss: Undefined variable: "$rgps-pink".)
+2014-11-10 11:29:07 overwrite ../css/ie.css 
+2014-11-10 11:29:07     error style.scss (Line 43 of partials/_variables.scss: Undefined variable: "$rgps-pink".)
+2014-11-10 11:29:07 overwrite ../css/style.css 
+2014-11-10 11:31:38     error editor-style.scss (Line 44 of partials/_variables.scss: Undefined variable: "$rgps-pink".)
+2014-11-10 11:31:38 overwrite ../css/editor-style.css 
+2014-11-10 11:31:38     error ie.scss (Line 44 of partials/_variables.scss: Undefined variable: "$rgps-pink".)
+2014-11-10 11:31:38 overwrite ../css/ie.css 
+2014-11-10 11:31:38     error style.scss (Line 44 of partials/_variables.scss: Undefined variable: "$rgps-pink".)
+2014-11-10 11:31:38 overwrite ../css/style.css 
+2014-11-10 11:33:33     error editor-style.scss (Line 45 of partials/_variables.scss: Undefined variable: "$rgps-pink".)
+2014-11-10 11:33:33 overwrite ../css/editor-style.css 
+2014-11-10 11:33:33     error ie.scss (Line 45 of partials/_variables.scss: Undefined variable: "$rgps-pink".)
+2014-11-10 11:33:33 overwrite ../css/ie.css 
+2014-11-10 11:33:33     error style.scss (Line 45 of partials/_variables.scss: Undefined variable: "$rgps-pink".)
+2014-11-10 11:33:33 overwrite ../css/style.css 
+2014-11-10 11:33:40     error editor-style.scss (Line 45 of partials/_variables.scss: Undefined variable: "$rgps-pink".)
+2014-11-10 11:33:40 identical ../css/editor-style.css 
+2014-11-10 11:33:40     error ie.scss (Line 45 of partials/_variables.scss: Undefined variable: "$rgps-pink".)
+2014-11-10 11:33:40 identical ../css/ie.css 
+2014-11-10 11:33:40     error style.scss (Line 45 of partials/_variables.scss: Undefined variable: "$rgps-pink".)
+2014-11-10 11:33:40 identical ../css/style.css 
+2014-11-10 11:34:17 overwrite ../css/editor-style.css 
+2014-11-10 11:34:17 overwrite ../css/ie.css 
+2014-11-10 11:34:17 overwrite ../css/style.css 
