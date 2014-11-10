@@ -155,6 +155,9 @@ HEADER STYLES
 	background-color: $blue;
 	@include css-gradient(#70a1d7,#8fb1d7);
 }
+#inner-header{
+	position: relative;
+}
 
 .top-menu{
 	background: $dark-gray;
@@ -171,7 +174,7 @@ HEADER STYLES
 	}
 }
 
-	a.logo {
+	.logo {
 		color: $white;
 		text-indent: -9999px;
 		display: block;
@@ -196,7 +199,19 @@ HEADER STYLES
 	}
 
 /*********************
-NAVIGATION STYLES
+Primary Menu
+*********************/
+.primary-nav{
+	display: none;
+	background: $red;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	@include rounded-top(8px);
+}
+
+/*********************
+BASE NAVIGATION STYLES
 *********************/
 
 /*

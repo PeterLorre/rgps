@@ -150,6 +150,10 @@ BOX SIZING
 /* @include box-sizing(border-box); */
 /* NOTE: value of "padding-box" is only supported in Gecko. So
 probably best not to use it. I mean, were you going to anyway? */
+/*
+Border Radius
+USAGE: @include rounded(4px);
+*/
 /******************************************************************
 Site Name:
 Author:
@@ -283,31 +287,48 @@ HEADER STYLES
 .logo {
   float: left;
 }
+/* line 39, ../scss/breakpoints/_768up.scss */
+.logo img {
+  width: 78%;
+  margin: 0;
+}
 
-/* line 40, ../scss/breakpoints/_768up.scss */
+/* line 45, ../scss/breakpoints/_768up.scss */
 .phone-header {
   color: #ebeff2;
   font-size: 25px;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
-  margin: 2.3em 1em 1em;
+  margin: .3em 0 1em 1em;
+}
+
+/*********************
+Primary Menu
+*********************/
+/* line 55, ../scss/breakpoints/_768up.scss */
+.primary-nav {
+  display: block;
+}
+/* line 57, ../scss/breakpoints/_768up.scss */
+.primary-nav a {
+  font-size: .85em;
 }
 
 /*********************
 NAVIGATION STYLES
 *********************/
-/* line 51, ../scss/breakpoints/_768up.scss */
+/* line 66, ../scss/breakpoints/_768up.scss */
 .nav {
   border: 0;
   /* end .menu ul li */
   /* highlight current page */
   /* end current highlighters */
 }
-/* line 53, ../scss/breakpoints/_768up.scss */
+/* line 68, ../scss/breakpoints/_768up.scss */
 .nav ul {
   background: #323944;
   margin-top: 0;
 }
-/* line 57, ../scss/breakpoints/_768up.scss */
+/* line 72, ../scss/breakpoints/_768up.scss */
 .nav li {
   float: left;
   position: relative;
@@ -316,7 +337,7 @@ NAVIGATION STYLES
   */
   /* showing sub-menus */
 }
-/* line 61, ../scss/breakpoints/_768up.scss */
+/* line 76, ../scss/breakpoints/_768up.scss */
 .nav li a {
   border-bottom: 0;
   /*
@@ -324,12 +345,12 @@ NAVIGATION STYLES
   has the possibility of being a mobile device.
   */
 }
-/* line 68, ../scss/breakpoints/_768up.scss */
+/* line 83, ../scss/breakpoints/_768up.scss */
 .nav li a:hover, .nav li a:focus {
   color: white;
   text-decoration: underline;
 }
-/* line 81, ../scss/breakpoints/_768up.scss */
+/* line 96, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu,
 .nav li ul.children {
   margin-top: 0;
@@ -340,7 +361,7 @@ NAVIGATION STYLES
   z-index: 8999;
   /* highlight sub-menu current page */
 }
-/* line 89, ../scss/breakpoints/_768up.scss */
+/* line 104, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li,
 .nav li ul.children li {
   /*
@@ -349,7 +370,7 @@ NAVIGATION STYLES
   for usability. k, bai.
   */
 }
-/* line 91, ../scss/breakpoints/_768up.scss */
+/* line 106, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li a,
 .nav li ul.children li a {
   padding-left: 10px;
@@ -358,18 +379,18 @@ NAVIGATION STYLES
   width: 180px;
   border-bottom: 1px solid #ccc;
 }
-/* line 108, ../scss/breakpoints/_768up.scss */
+/* line 123, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li:last-child a,
 .nav li ul.children li:last-child a {
   border-bottom: 0;
 }
-/* line 118, ../scss/breakpoints/_768up.scss */
+/* line 133, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li ul,
 .nav li ul.children li ul {
   top: 0;
   left: 100%;
 }
-/* line 133, ../scss/breakpoints/_768up.scss */
+/* line 148, ../scss/breakpoints/_768up.scss */
 .nav li:hover > ul {
   top: auto;
   visibility: visible;
@@ -379,28 +400,28 @@ NAVIGATION STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 153, ../scss/breakpoints/_768up.scss */
+/* line 168, ../scss/breakpoints/_768up.scss */
 .sidebar {
   margin-top: 2.2em;
 }
 
-/* line 157, ../scss/breakpoints/_768up.scss */
+/* line 172, ../scss/breakpoints/_768up.scss */
 .widgettitle {
   border-bottom: 2px solid #444;
   margin-bottom: 0.75em;
 }
 
-/* line 162, ../scss/breakpoints/_768up.scss */
+/* line 177, ../scss/breakpoints/_768up.scss */
 .widget {
   padding: 0 10px;
   margin: 2.2em 0;
 }
-/* line 167, ../scss/breakpoints/_768up.scss */
+/* line 182, ../scss/breakpoints/_768up.scss */
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */
 }
-/* line 175, ../scss/breakpoints/_768up.scss */
+/* line 190, ../scss/breakpoints/_768up.scss */
 .widget ul li ul {
   margin-top: 0.75em;
   padding-left: 1em;
@@ -425,7 +446,7 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 283, ../scss/breakpoints/_768up.scss */
+/* line 298, ../scss/breakpoints/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
@@ -450,10 +471,27 @@ be seen on the Desktop.
   width: 1040px;
 }
 
-/* line 16, ../scss/breakpoints/_1030up.scss */
+/* line 18, ../scss/breakpoints/_1030up.scss */
+.logo img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 24, ../scss/breakpoints/_1030up.scss */
 .phone-header {
   font-size: 47px;
-  margin: 1em;
+}
+
+/*********************
+Primary Menu
+*********************/
+/* line 32, ../scss/breakpoints/_1030up.scss */
+.primary-nav {
+  padding: 0 1em;
+}
+/* line 34, ../scss/breakpoints/_1030up.scss */
+.primary-nav a {
+  font-size: 1em;
 }
 
 /*

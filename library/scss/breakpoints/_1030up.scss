@@ -13,9 +13,25 @@ be seen on the Desktop.
   width: 1040px;
 }
 
+.logo {
+
+	img{
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
 .phone-header{
-
 	font-size: 47px;
-	margin: 1em;
 
+}
+
+/*********************
+Primary Menu
+*********************/
+.primary-nav{
+	padding: 0 1em;
+	a{
+		font-size: 1em;
+	}
 }
