@@ -24,6 +24,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/*Selecting styles*/
+::-moz-selection { color: $soft-white;  background: $green; }
+::selection      { color: $soft-white;  background: $green; } 
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
