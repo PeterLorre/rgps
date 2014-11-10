@@ -213,8 +213,9 @@ function rgps_theme_support() {
 	// registering wp3+ menus
 	register_nav_menus(
 		array(
-			'main-nav' => __( 'The Main Menu', 'rgpstheme' ),   // main nav in header
-			'footer-links' => __( 'Footer Links', 'rgpstheme' ) // secondary nav in footer
+			'top-nav' => __( 'The Top Menu', 'rgpstheme' ),   // main nav in header
+			'primary-nav' => __( 'The Primary Menu', 'rgpstheme' ),   // main nav in header
+			'footer-nav' => __( 'The Footer Menu', 'rgpstheme' ) // secondary nav in footer
 		)
 	);
 } /* end rgps theme support */
