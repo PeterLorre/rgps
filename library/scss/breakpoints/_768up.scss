@@ -33,7 +33,9 @@ HEADER STYLES
 
 .header {}
 
-	#logo {}
+	.logo {
+		float: left;
+	}
 
 /*********************
 NAVIGATION STYLES
