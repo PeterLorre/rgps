@@ -27,9 +27,14 @@ style a page via class
 .home {
 
 	.hero-main{
+		display: block;
 		background: $white url(../images/bg-featured.jpg) no-repeat top left;
 		// background-size: contain;
 		// background-attachment: fixed;
+	}
+	h1{
+		text-shadow: 0px 4px 5px rgba(0,0,0, .3);
+		font-size: 48px;
 	}
 }
 

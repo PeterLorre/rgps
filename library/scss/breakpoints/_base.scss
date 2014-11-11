@@ -39,6 +39,7 @@ style a page via class
 		margin: 0;
 	}
 	.hero-main{
+		display: none;
 		position: relative;
 		background: $white;
 		height: 400px;
@@ -53,6 +54,12 @@ style a page via class
 			overflow: hidden!important;
 			margin: 75px auto 0;
 		}
+	}
+	h1{
+		color: white;
+		text-align: center;
+		text-shadow: 0px 4px 5px rgba(0,0,0, .3);
+		font-size: 40px;
 	}
 	.content-main{
 		height: 1200px;
