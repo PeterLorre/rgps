@@ -89,7 +89,7 @@ style a page via class
 	}
 	.how-it-works{
 		background: $dark-gray;
-		@include rounded(5px);
+		border-top: 10px solid $red;
 		padding: 1em;
 		div{
 			padding: 0 .25em;

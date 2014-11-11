@@ -12,8 +12,6 @@
 
 				<h1>Your Complete Business Review Solution</h1>
 
-				<div id="inner-content" class="wrap cf">
-
 					<section class="how-it-works cf">
 
 						<div class="consumer d-1of3 cf">
@@ -35,8 +33,6 @@
 						<a href="#" class="how-cta">How it works</a>
 					
 					</section>
-
-				</div>
 
 			</div>
 

@@ -1568,9 +1568,7 @@ style a page via class
 /* line 90, ../scss/breakpoints/_base.scss */
 .home .how-it-works {
   background: #444444;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  border-top: 10px solid #cc302f;
   padding: 1em;
 }
 /* line 94, ../scss/breakpoints/_base.scss */
