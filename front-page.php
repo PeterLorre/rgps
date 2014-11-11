@@ -34,6 +34,23 @@
 					
 					</section>
 
+					<div class="connect wrap cf">
+
+						<!-- Call us today -->
+						<?php
+						if ( wp_is_mobile() ) {
+							echo '<div class="phone-footer"><h3>Call Us Today!</h3><a href="tel:+1-800-345-6789">1-800-345-6789</a></div>';
+						}
+						else{
+							echo '<div class="phone-footer"><h3>Call Us Today!</h3><p class="phone-footer">1-800-345-6789</p></div>';
+						}
+						?>
+
+						<!-- soclial -->
+						<div class="social"><h3>Connect With Us:</h3></div>
+						
+					</div>
+
 			</div>
 
 <?php get_footer(); ?>
