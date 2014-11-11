@@ -158,6 +158,9 @@ style a page via class
 			}				
 		}
 	}
+	.connect{
+		height: 250px;
+	}
 	.call-us{
 		h3{
 			margin: 1em auto 0;
@@ -1081,9 +1084,25 @@ FOOTER STYLES
 *********************/
 
 .footer {
+	position: relative;
 	clear: both;
 	background-color: $dark-gray;
 	color: $light-gray;
+	border-top: 14px $red solid;
+	height: 300px;
+}
+
+.guarantee{
+	position: absolute;
+	top: -115px;
+	left: 25px;
+	z-index: 2;
+}
+.logo-footer{
+	position: absolute;
+	top: -105px;
+	left: 308px;
+	z-index: 2;
 }
 
 	/*

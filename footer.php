@@ -2,6 +2,9 @@
 
 				<div id="inner-footer" class="wrap cf">
 
+				<img class="guarantee" src="<?php echo get_template_directory_uri(); ?>/library/images/guarantee.png" alt="" />
+				<img class="logo-footer" src="<?php echo get_template_directory_uri(); ?>/library/images/logo-footer.png" alt="" />
+
 					<nav role="navigation">
 						<?php wp_nav_menu(array(
     					'container' => '',                              // remove nav container
