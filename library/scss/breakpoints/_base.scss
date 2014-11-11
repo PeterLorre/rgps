@@ -87,12 +87,76 @@ style a page via class
 		text-shadow: 0px 4px 5px rgba(0,0,0, .3);
 		font-size: 40px;
 	}
-	.content-main{
-		height: 1200px;
-	}
-	article{
-		background: none;
-		border: 0;
+	.how-it-works{
+		background: $dark-gray;
+		@include rounded(5px);
+		padding: 1em;
+		div{
+			padding: 0 .25em;
+			h3{
+				color: $green;
+				margin: 1em auto;
+				font-weight: 700;
+				text-align: center;
+				text-transform: uppercase;
+				width: 45%;
+				border-bottom: 3px solid $gray;
+				padding-bottom: 5px;
+			}
+			img{
+				width: 95%;
+				height: auto;
+				max-width: 398px;
+				margin: 0 auto;
+				display: block;
+			}
+			blockquote{
+				color: $light-gray;
+				text-align: center;
+				// border-left: 4px solid $gray;
+				margin: 1.5em 10px;
+				padding: 0.5em 10px;
+				quotes: "\201C""\201D""\2018""\2019";
+				&:before{
+					  color: #ccc;
+					  content: open-quote;
+					  font-size: 4em;
+					  line-height: 0.1em;
+					  margin-right: 0.25em;
+					  vertical-align: -0.4em;
+				}
+				&:after{
+					content: close-quote;
+				}
+			}
+		}
+		.how-cta{
+			clear: both;
+			display: block;
+			margin: 50px auto 0;
+			width: 200px;
+			text-align: center;
+			background: $red;
+			padding: .75em;
+			border-radius: 5px;
+			border: 2px solid $red;
+			text-transform: uppercase;
+			color: $white;
+			text-decoration: none;
+			font-weight: 700;
+			@include transition(all 0.2s ease-in-out);
+			box-shadow: 3px 3px 0px rgba(0,0,0, .2);
+			&:hover, &:focus{
+				background: darken($red, 9%);
+				color: $white;
+				border-color: $red;
+			}
+			&:active{
+				@include transition(all 0.1s ease-in-out);
+				transform: translate(1px, 2px);
+				box-shadow: 0 0 0 rgba(0,0,0,0.1);
+			}				
+		}
 	}
 }                          /* home page */
 .blog {}                          /* blog template page */

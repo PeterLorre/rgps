@@ -14,10 +14,26 @@
 
 				<div id="inner-content" class="wrap cf">
 
-					<section class="content-main">
+					<section class="how-it-works cf">
 
+						<div class="consumer d-1of3 cf">
+							<h3>Consumer</h3>
+							<img src="<?php echo get_template_directory_uri(); ?>/library/images/consumer.jpg" alt="The Consumers Perspective" />
+							<blockquote>I don't have time to write 20 different reviews.</blockquote>
+						</div>
+						<div class="business-owner d-1of3 cf">
+							<h3>Owner</h3>
+							<img src="<?php echo get_template_directory_uri(); ?>/library/images/owner.jpg" alt="The Consumers Perspective" />
+							<blockquote>I can't believe how a one star rating kills my business.</blockquote>
+						</div>
+						<div class="reputation d-1of3 cf">
+							<h3>Reputation GPS</h3>
+							<img src="<?php echo get_template_directory_uri(); ?>/library/images/reputation-gps.jpg" alt="The Consumers Perspective" />
+							<blockquote>Don't worry. We'll put you in control of your online reviews.</blockquote>
+						</div>
+
+						<a href="#" class="how-cta">How it works</a>
 					
-						
 					</section>
 
 				</div>
