@@ -9,3 +9,27 @@ on larger screens.
 
 ******************************************************************/
 
+/********************
+WORDPRESS BODY CLASSES
+style a page via class
+********************/
+
+.home {
+
+	.hero-main{
+		.wrap{
+			position: relative;
+		}
+		.hero-diagram{
+			display: block;
+			float: left;
+			position: relative;
+			top: 25px;
+			left: -175px;
+		}
+		#meteor-slideshow {
+			position: absolute;
+			right: -40px;
+		}
+	}
+}

@@ -19,6 +19,20 @@ GENERAL STYLES
 
 body {}
 
+/********************
+WORDPRESS BODY CLASSES
+style a page via class
+********************/
+
+.home {
+
+	.hero-main{
+		background: $white url(../images/bg-featured.jpg) no-repeat top left;
+		// background-size: contain;
+		// background-attachment: fixed;
+	}
+}
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -32,12 +46,17 @@ HEADER STYLES
 *********************/
 
 .header {}
+#inner-header{
+	height: 115px;
+}
 
 	.logo {
 		float: left;
 
 		img{
-			width: 78%;
+			position: absolute;
+			z-index: 2;
+			width: 400px;
 			margin: 0;
 		}
 	}
@@ -54,6 +73,7 @@ Primary Menu
 *********************/
 .primary-nav{
 	display: block;
+	border-bottom: 2px solid $green;
 	a{
 		font-size: .85em;
 	}
@@ -64,7 +84,7 @@ NAVIGATION STYLES
 *********************/
 
 .nav {
-	border: 0;
+	// border: 0;
 	ul {
 		background:$black;
 		margin-top:0;

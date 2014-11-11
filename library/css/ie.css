@@ -272,10 +272,19 @@ come into play. Have fun!
 /*********************
 GENERAL STYLES
 *********************/
+/********************
+WORDPRESS BODY CLASSES
+style a page via class
+********************/
+/* line 29, ../scss/breakpoints/_768up.scss */
+.home .hero-main {
+  background: white url(../images/bg-featured.jpg) no-repeat top left;
+}
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/
-/* line 26, ../scss/breakpoints/_768up.scss */
+/* line 40, ../scss/breakpoints/_768up.scss */
 .wrap {
   width: 760px;
 }
@@ -283,17 +292,24 @@ LAYOUT & GRID STYLES
 /*********************
 HEADER STYLES
 *********************/
-/* line 36, ../scss/breakpoints/_768up.scss */
+/* line 49, ../scss/breakpoints/_768up.scss */
+#inner-header {
+  height: 115px;
+}
+
+/* line 53, ../scss/breakpoints/_768up.scss */
 .logo {
   float: left;
 }
-/* line 39, ../scss/breakpoints/_768up.scss */
+/* line 56, ../scss/breakpoints/_768up.scss */
 .logo img {
-  width: 78%;
+  position: absolute;
+  z-index: 2;
+  width: 400px;
   margin: 0;
 }
 
-/* line 45, ../scss/breakpoints/_768up.scss */
+/* line 64, ../scss/breakpoints/_768up.scss */
 .phone-header {
   color: #ebeff2;
   font-size: 25px;
@@ -304,11 +320,12 @@ HEADER STYLES
 /*********************
 Primary Menu
 *********************/
-/* line 55, ../scss/breakpoints/_768up.scss */
+/* line 74, ../scss/breakpoints/_768up.scss */
 .primary-nav {
   display: block;
+  border-bottom: 2px solid #77ba6b;
 }
-/* line 57, ../scss/breakpoints/_768up.scss */
+/* line 77, ../scss/breakpoints/_768up.scss */
 .primary-nav a {
   font-size: .85em;
 }
@@ -316,19 +333,18 @@ Primary Menu
 /*********************
 NAVIGATION STYLES
 *********************/
-/* line 66, ../scss/breakpoints/_768up.scss */
+/* line 86, ../scss/breakpoints/_768up.scss */
 .nav {
-  border: 0;
   /* end .menu ul li */
   /* highlight current page */
   /* end current highlighters */
 }
-/* line 68, ../scss/breakpoints/_768up.scss */
+/* line 88, ../scss/breakpoints/_768up.scss */
 .nav ul {
   background: #323944;
   margin-top: 0;
 }
-/* line 72, ../scss/breakpoints/_768up.scss */
+/* line 92, ../scss/breakpoints/_768up.scss */
 .nav li {
   float: left;
   position: relative;
@@ -337,7 +353,7 @@ NAVIGATION STYLES
   */
   /* showing sub-menus */
 }
-/* line 76, ../scss/breakpoints/_768up.scss */
+/* line 96, ../scss/breakpoints/_768up.scss */
 .nav li a {
   border-bottom: 0;
   /*
@@ -345,12 +361,12 @@ NAVIGATION STYLES
   has the possibility of being a mobile device.
   */
 }
-/* line 83, ../scss/breakpoints/_768up.scss */
+/* line 103, ../scss/breakpoints/_768up.scss */
 .nav li a:hover, .nav li a:focus {
   color: white;
   text-decoration: underline;
 }
-/* line 96, ../scss/breakpoints/_768up.scss */
+/* line 116, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu,
 .nav li ul.children {
   margin-top: 0;
@@ -361,7 +377,7 @@ NAVIGATION STYLES
   z-index: 8999;
   /* highlight sub-menu current page */
 }
-/* line 104, ../scss/breakpoints/_768up.scss */
+/* line 124, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li,
 .nav li ul.children li {
   /*
@@ -370,7 +386,7 @@ NAVIGATION STYLES
   for usability. k, bai.
   */
 }
-/* line 106, ../scss/breakpoints/_768up.scss */
+/* line 126, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li a,
 .nav li ul.children li a {
   padding-left: 10px;
@@ -379,18 +395,18 @@ NAVIGATION STYLES
   width: 180px;
   border-bottom: 1px solid #ccc;
 }
-/* line 123, ../scss/breakpoints/_768up.scss */
+/* line 143, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li:last-child a,
 .nav li ul.children li:last-child a {
   border-bottom: 0;
 }
-/* line 133, ../scss/breakpoints/_768up.scss */
+/* line 153, ../scss/breakpoints/_768up.scss */
 .nav li ul.sub-menu li ul,
 .nav li ul.children li ul {
   top: 0;
   left: 100%;
 }
-/* line 148, ../scss/breakpoints/_768up.scss */
+/* line 168, ../scss/breakpoints/_768up.scss */
 .nav li:hover > ul {
   top: auto;
   visibility: visible;
@@ -400,28 +416,28 @@ NAVIGATION STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 168, ../scss/breakpoints/_768up.scss */
+/* line 188, ../scss/breakpoints/_768up.scss */
 .sidebar {
   margin-top: 2.2em;
 }
 
-/* line 172, ../scss/breakpoints/_768up.scss */
+/* line 192, ../scss/breakpoints/_768up.scss */
 .widgettitle {
   border-bottom: 2px solid #444;
   margin-bottom: 0.75em;
 }
 
-/* line 177, ../scss/breakpoints/_768up.scss */
+/* line 197, ../scss/breakpoints/_768up.scss */
 .widget {
   padding: 0 10px;
   margin: 2.2em 0;
 }
-/* line 182, ../scss/breakpoints/_768up.scss */
+/* line 202, ../scss/breakpoints/_768up.scss */
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */
 }
-/* line 190, ../scss/breakpoints/_768up.scss */
+/* line 210, ../scss/breakpoints/_768up.scss */
 .widget ul li ul {
   margin-top: 0.75em;
   padding-left: 1em;
@@ -446,7 +462,7 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 298, ../scss/breakpoints/_768up.scss */
+/* line 318, ../scss/breakpoints/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
@@ -471,13 +487,18 @@ be seen on the Desktop.
   width: 1040px;
 }
 
-/* line 18, ../scss/breakpoints/_1030up.scss */
+/* line 16, ../scss/breakpoints/_1030up.scss */
+#inner-header {
+  height: 147px;
+}
+
+/* line 22, ../scss/breakpoints/_1030up.scss */
 .logo img {
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 24, ../scss/breakpoints/_1030up.scss */
+/* line 28, ../scss/breakpoints/_1030up.scss */
 .phone-header {
   font-size: 47px;
 }
@@ -485,11 +506,11 @@ be seen on the Desktop.
 /*********************
 Primary Menu
 *********************/
-/* line 32, ../scss/breakpoints/_1030up.scss */
+/* line 36, ../scss/breakpoints/_1030up.scss */
 .primary-nav {
   padding: 0 1em;
 }
-/* line 34, ../scss/breakpoints/_1030up.scss */
+/* line 38, ../scss/breakpoints/_1030up.scss */
 .primary-nav a {
   font-size: 1em;
 }
