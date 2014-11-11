@@ -6,6 +6,7 @@
 					<div id="inner-content" class="wrap cf">
 						<img class="hero-diagram" src="<?php echo get_template_directory_uri(); ?>/library/images/logos.png" alt="diagram" />
 						<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
+						<a class="cta-button-hero-main" href="#">Get Started Free!</a>
 					</div>
 				</section>
 

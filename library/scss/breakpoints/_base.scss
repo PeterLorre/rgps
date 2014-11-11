@@ -52,7 +52,26 @@ style a page via class
 			margin-top: 75px;
 			clear: none;
 			overflow: hidden!important;
-			margin: 75px auto 0;
+			margin: 45px auto 0;
+		}
+		.cta-button-hero-main{
+			display: block;
+			margin: 50px auto 0;
+			width: 200px;
+			text-align: center;
+			background: $white;
+			padding: .75em;
+			border-radius: 5px;
+			border: 2px solid $red;
+			text-transform: uppercase;
+			color: $red;
+			text-decoration: none;
+			font-weight: 700;
+			@include transition(all 0.2s ease-in-out);
+				&:hover, &:focus{
+					background: $red;
+					color: $white;
+				}
 		}
 	}
 	h1{
