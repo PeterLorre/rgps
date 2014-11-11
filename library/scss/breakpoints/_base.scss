@@ -59,18 +59,25 @@ style a page via class
 			margin: 50px auto 0;
 			width: 200px;
 			text-align: center;
-			background: $white;
+			background: $green;
 			padding: .75em;
 			border-radius: 5px;
-			border: 2px solid $red;
+			border: 2px solid $green;
 			text-transform: uppercase;
-			color: $red;
+			color: $white;
 			text-decoration: none;
 			font-weight: 700;
 			@include transition(all 0.2s ease-in-out);
+			box-shadow: 3px 3px 0px rgba(0,0,0, .2);
 				&:hover, &:focus{
-					background: $red;
-					color: $white;
+					background: $white;
+					color: $green;
+					border-color: $green;
+				}
+				&:active{
+					@include transition(all 0.1s ease-in-out);
+					transform: translate(1px, 2px);
+					box-shadow: 0 0 0 rgba(0,0,0,0.1);
 				}
 		}
 	}
