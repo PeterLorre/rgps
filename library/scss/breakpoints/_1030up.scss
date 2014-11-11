@@ -9,6 +9,23 @@ be seen on the Desktop.
 
 ******************************************************************/
 
+
+/********************
+WORDPRESS BODY CLASSES
+style a page via class
+********************/
+
+.home {
+
+	.how-it-works{
+		div{
+			h3{
+				border-bottom: 3px solid $gray;
+			}
+		}
+	}
+}
+
 .wrap {
   width: 1040px;
 }
@@ -28,6 +45,16 @@ be seen on the Desktop.
 .phone-header{
 	font-size: 47px;
 
+}
+
+.call-us{
+	width: 60%;
+	float: left;
+	margin: 0;
+}
+.social{
+	width: 25%;
+	float: left;
 }
 
 /*********************

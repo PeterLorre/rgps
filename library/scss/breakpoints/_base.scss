@@ -70,8 +70,8 @@ style a page via class
 			@include transition(all 0.2s ease-in-out);
 			box-shadow: 3px 3px 0px rgba(0,0,0, .2);
 				&:hover, &:focus{
-					background: $white;
-					color: $green;
+					background: darken($green, 10%);
+					color: darken $white;
 					border-color: $green;
 				}
 				&:active{
@@ -90,17 +90,17 @@ style a page via class
 	.how-it-works{
 		background: $dark-gray;
 		border-top: 10px solid $red;
-		padding: 1em;
 		div{
 			padding: 0 .25em;
+			background: $green;
+			margin: 1em 0;
 			h3{
-				color: $green;
+				color: $white;
 				margin: 1em auto;
 				font-weight: 700;
 				text-align: center;
 				text-transform: uppercase;
 				width: 45%;
-				border-bottom: 3px solid $gray;
 				padding-bottom: 5px;
 			}
 			img{
@@ -115,7 +115,7 @@ style a page via class
 				text-align: center;
 				// border-left: 4px solid $gray;
 				margin: 1.5em 10px;
-				padding: 0.5em 10px;
+				// padding: 0.5em 10px;
 				quotes: "\201C""\201D""\2018""\2019";
 				&:before{
 					  color: #ccc;
@@ -133,7 +133,7 @@ style a page via class
 		.how-cta{
 			clear: both;
 			display: block;
-			margin: 50px auto 0;
+			margin: 2em auto;
 			width: 200px;
 			text-align: center;
 			background: $red;
@@ -158,31 +158,52 @@ style a page via class
 			}				
 		}
 	}
-	.connect{
+	.call-us{
+		h3{
+			margin: 1em auto 0;
+			display: block;
+			text-align: center;
+			color: white;
+			font-size: 36px;
+			line-height: 1.2em;
+			text-shadow: 3px 3px rgba(0,0,0,.2);
+			text-transform: uppercase;
+			letter-spacing: .2em;
+		}
 		.phone-footer{
-			h3{
-				margin: 1em auto 0;
-				display: block;
-				text-align: center;
-				color: white;
-				font-size: 36px;
-				text-shadow: 3px 3px rgba(0,0,0,.2);
-				text-transform: uppercase;
-				letter-spacing: .2em;
-			}
-			a,p{
-				margin: 0 auto;
-				display: block;
-				text-align: center;
-				color: white;
-				font-size: 36px;
-				text-shadow: 3px 3px rgba(0,0,0,.2);
-				text-transform: uppercase;
-				letter-spacing: .2em;
-			}
+			display: block;
+			text-align: center;
+			color: white;
+			font-size: 24px;
+			line-height: 1.2em;
+			text-shadow: 3px 3px rgba(0,0,0,.2);
+			text-transform: uppercase;
+			letter-spacing: .2em;
+			text-decoration: none;
 		}
 	}
-}                          /* home page */
+	.social{
+		h3{
+			margin: 1em auto 0;
+			display: block;
+			text-align: center;
+			color: white;
+			font-size: 32px;
+			line-height: 1.2em;
+			text-shadow: 3px 3px rgba(0,0,0,.2);
+			text-transform: uppercase;
+			letter-spacing: .2em;
+		}
+		ul{
+			width: 150px;
+			margin: 1em auto;
+		}
+		li{
+			float: left;
+			margin: .15em;
+		}
+	}
+}/* END home page */
 .blog {}                          /* blog template page */
 .archive {}                       /* archive page */
 .date {}                          /* date archive page */
@@ -348,6 +369,7 @@ HEADER STYLES
 		font-weight: 700;
 		float: right;
 		margin: .2em;
+		text-decoration: none;
 	}
 
 /*********************

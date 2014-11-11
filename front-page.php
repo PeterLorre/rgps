@@ -34,22 +34,32 @@
 					
 					</section>
 
-					<div class="connect wrap cf">
+					<div class="call-us wrap cf">
 
 						<!-- Call us today -->
 						<?php
 						if ( wp_is_mobile() ) {
-							echo '<div class="phone-footer"><h3>Call Us Today!</h3><a href="tel:+1-800-345-6789">1-800-345-6789</a></div>';
+							echo '<h3>Call Us Today!</h3><a class="phone-footer" href="tel:+1-800-345-6789">1-800-345-6789</a>';
 						}
 						else{
-							echo '<div class="phone-footer"><h3>Call Us Today!</h3><p class="phone-footer">1-800-345-6789</p></div>';
+							echo '<h3>Call Us Today!</h3><p class="phone-footer">1-800-345-6789</p>';
 						}
 						?>
 
-						<!-- soclial -->
-						<div class="social"><h3>Connect With Us:</h3></div>
-						
 					</div>
+
+					<!-- soclial -->
+					<div class="social">
+						<h3>Connect With Us:</h3>
+						<div class="icons">
+						<ul class="cf">
+							<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/library/images/social/facebook-icon.png" alt="Find us on Facebook."></a></li>
+							<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/library/images/social/linkedin-icon.png" alt="Connect on Linkedin."></a></li>
+							<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/library/images/social/twitter-icon.png" alt="Follow us on Twitter."></a></li>
+							<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/library/images/social/youtube-icon.png" alt="Watch our Youtube videos."></a></li>
+							</ul>
+						</div>
+					</div>								
 
 			</div>
 
