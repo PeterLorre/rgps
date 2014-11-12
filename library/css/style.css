@@ -1603,6 +1603,20 @@ style a page via class
   background: #87CB93;
   padding: .5em 0 .5em .5em;
 }
+.page-template .breadcrumbs span a {
+  color: #444;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-right: .5em;
+  font-weight: 700;
+}
+.page-template .breadcrumbs .breadcrumb_last {
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-style: italic;
+  margin-left: .5em;
+}
 .page-template .footer .guarantee, .page-template .footer .logo-footer {
   display: none;
 }

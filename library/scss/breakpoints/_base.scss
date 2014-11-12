@@ -252,6 +252,20 @@ style a page via class
 		display: block;
 		background: #87CB93;
 		padding: .5em 0 .5em .5em;
+		span a{
+			color: #444;
+			text-transform: uppercase;
+			font-size: 13px;
+			margin-right: .5em;
+			font-weight: 700;
+		}
+		.breadcrumb_last{
+			color: white;
+			font-size: 13px;
+			text-transform: uppercase;
+			font-style: italic;
+			margin-left: .5em;
+		} 
 	}
 	.footer{
 		.guarantee, .logo-footer{
