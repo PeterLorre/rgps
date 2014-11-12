@@ -295,10 +295,4 @@ function rgps_enqueue_bootstrap_css() {
     wp_enqueue_style( 'prefix-bootstrap_css', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css', array(), '4.1.0' );
 }
 
-add_action( 'wp_enqueue_scripts', 'rgps_enqueue_bootstrap_js' );
-
-function rgps_enqueue_bootstrap_js() {
-    wp_enqueue_style( 'prefix-bootstrap_js', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js', array(), '4.1.0' );
-}
-
 ?>

@@ -144,6 +144,9 @@ function rgps_scripts_and_styles() {
 
 		//adding scripts file in the footer
 		wp_register_script( 'rgps-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
+		
+		//adding scripts file in the footer
+		wp_register_script( 'rgps-bootstrap-js', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js', array( 'jquery' ), '', true );
 
 		// enqueue styles and scripts
 		wp_enqueue_script( 'rgps-modernizr' );
@@ -159,6 +162,7 @@ function rgps_scripts_and_styles() {
 		*/
 		wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'rgps-js' );
+		wp_enqueue_script( 'rgps-bootstrap-js' );
 
 	}
 }
