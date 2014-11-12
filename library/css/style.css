@@ -1582,6 +1582,22 @@ style a page via class
 /* tag page */
 /* individual tag page (i.e. body.tag-news) */
 /* replace the number to the corresponding page number */
+.page-template .header {
+  border-bottom: 4px solid #444;
+}
+.page-template #content {
+  background: #ebeff2;
+  margin: 0;
+}
+.page-template #content article {
+  background: none;
+  height: 400px;
+  border: 0;
+}
+.page-template #content article header, .page-template #content article footer {
+  border: 0;
+}
+
 /* custom page template page */
 /* individual page template (i.e. body.page-template-contact-php */
 /* replace the number to the corresponding page number */

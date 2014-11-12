@@ -231,7 +231,23 @@ style a page via class
 .tag {}                           /* tag page */
 	.tag-slug {}                    /* individual tag page (i.e. body.tag-news) */
 	.tag-paged-1 {}                 /* replace the number to the corresponding page number */
-.page-template {}                 /* custom page template page */
+.page-template {
+	.header{
+		border-bottom: 4px solid #444;
+	}
+	#content{
+		background: $soft-white;
+		margin: 0;
+		article{
+			background: none;
+			height: 400px;
+			border: 0;
+			header, footer{
+				border: 0;
+			}
+		}
+	}
+}                 /* custom page template page */
 	.page-template-page-php {}      /* individual page template (i.e. body.page-template-contact-php */
 	.page-paged-1 {}                /* replace the number to the corresponding page number */
 	.page-parent {}                 /* parent page template */
