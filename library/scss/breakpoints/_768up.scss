@@ -27,10 +27,32 @@ style a page via class
 .home {
 
 	.hero-main{
-		display: block;
-		background: $white url(../images/bg-featured.jpg) no-repeat top left;
-		// background-size: contain;
-		// background-attachment: fixed;
+		height: 400px;
+		.hero-diagram{
+			display: none;
+			position: relative;
+			top: 25px;
+			width: 60%;
+			margin: 0 auto;
+			max-width: 689px;
+		}
+		#meteor-slideshow{
+			display: block;
+		}
+		.cta-button-hero-main{
+			@include transition(all 0.2s ease-in-out);
+			box-shadow: 3px 3px 0px rgba(0,0,0, .2);
+				&:hover, &:focus{
+					background: darken($green, 10%);
+					color: darken $white;
+					border-color: $green;
+				}
+				&:active{
+					@include transition(all 0.1s ease-in-out);
+					transform: translate(1px, 2px);
+					box-shadow: 0 0 0 rgba(0,0,0,0.1);
+				}
+		}
 	}
 	h1{
 		text-shadow: 0px 4px 5px rgba(0,0,0, .3);
@@ -117,7 +139,12 @@ Primary Menu
 	display: block;
 	border-bottom: 2px solid $green;
 	a{
+		@include transition(all .2s ease-in-out);
 		font-size: .85em;
+		&:hover, &:focus{
+			background: rgb(211, 79, 79);
+			text-decoration: none;
+		}
 	}
 }
 
@@ -144,7 +171,7 @@ NAVIGATION STYLES
 			*/
 			&:hover, &:focus {
 				color: $white;
-				text-decoration: underline;
+				// text-decoration: underline;
 			}
 		}
 

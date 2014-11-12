@@ -33,8 +33,10 @@ style a page via class
 		}
 		.cta-button-hero-main{
 			position: absolute;
-			bottom: 0;
+			bottom: -25px;
 			right: 120px;
+			margin: 0;
+			padding: .75em;
 		}
 	}
 }
@@ -43,13 +45,13 @@ style a page via class
 	/*Footer Widgets*/
 	.footer-widgets{
 		.widget{
-			width: 18%;
+			width: 16%;
 		}
 		.footer-trial{
 			display: block;
-			margin-left: 230px;
+			margin-left: 275px;
 			margin-right: 20px;
-			width: 25%;
+			width: 28%;
 		}
 		.footer-blog{
 			margin-left: 0;
