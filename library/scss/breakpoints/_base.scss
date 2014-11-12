@@ -247,10 +247,30 @@ style a page via class
 			}
 		}
 	}
+	.breadcrumbs{
+		margin: 0;
+		display: block;
+		background: #87CB93;
+		padding: .5em 0 .5em .5em;
+	}
+	.footer{
+		.guarantee, .logo-footer{
+			display: none;
+		}
+		.footer-widgets{
+			.widget{
+				width: 21%;
+			}
+			.footer-trial{
+				margin-left: 0;
+				width: 35%;
+			}
+		}
+	}
 }                 /* custom page template page */
 .page-template-page-about-php {
 	#content{
-		background: green url('../images/office-bg.jpg') no-repeat 0 75%;
+		background: $soft-white url('../images/office-bg.jpg') no-repeat 0 75%;
 		background-size: cover;
 		background-attachment: fixed;
 	}

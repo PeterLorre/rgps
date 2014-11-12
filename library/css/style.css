@@ -1597,10 +1597,26 @@ style a page via class
 .page-template #content article header, .page-template #content article footer {
   border: 0;
 }
+.page-template .breadcrumbs {
+  margin: 0;
+  display: block;
+  background: #87CB93;
+  padding: .5em 0 .5em .5em;
+}
+.page-template .footer .guarantee, .page-template .footer .logo-footer {
+  display: none;
+}
+.page-template .footer .footer-widgets .widget {
+  width: 21%;
+}
+.page-template .footer .footer-widgets .footer-trial {
+  margin-left: 0;
+  width: 35%;
+}
 
 /* custom page template page */
 .page-template-page-about-php #content {
-  background: green url("../images/office-bg.jpg") no-repeat 0 75%;
+  background: #ebeff2 url("../images/office-bg.jpg") no-repeat 0 75%;
   background-size: cover;
   background-attachment: fixed;
 }
