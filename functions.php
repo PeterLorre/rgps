@@ -155,14 +155,44 @@ add_action( 'customize_register', 'rgps_theme_customizer' );
 // Sidebars & Widgetizes Areas
 function rgps_register_sidebars() {
 	register_sidebar(array(
-		'id' => 'sidebar1',
-		'name' => __( 'Sidebar 1', 'rgpstheme' ),
-		'description' => __( 'The first (primary) sidebar.', 'rgpstheme' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'id' => 'footer-trial',
+		'name' => __( 'Footer Trial Info', 'rgpstheme' ),
+		'description' => __( 'Trial info in footer.', 'rgpstheme' ),
+		'before_widget' => '<div id="%1$s" class="widget  footer-trial %2$s">',
 		'after_widget' => '</div>',
-		'before_title' => '<h4 class="widgettitle">',
+		'before_title' => '<h4 class="footer-trial-title widgettitle">',
 		'after_title' => '</h4>',
 	));
+
+    register_sidebar(array(
+    'id' => 'footer-blog',
+    'name' => __( 'Footer Blog Posts', 'rgpstheme' ),
+    'description' => __( 'Blog Posts in Footer.', 'rgpstheme' ),
+    'before_widget' => '<div id="%1$s" class="widget footer-blog %2$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h4 class="footer-blog-title widgettitle">',
+    'after_title' => '</h4>',
+  ));
+
+    register_sidebar(array(
+    'id' => 'footer-links',
+    'name' => __( 'Footer Links', 'rgpstheme' ),
+    'description' => __( 'Links in Footer.', 'rgpstheme' ),
+    'before_widget' => '<div id="%1$s" class="widget footer-links %2$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h4 class="footer-links-title widgettitle">',
+    'after_title' => '</h4>',
+  ));
+
+  register_sidebar(array(
+    'id' => 'footer-press',
+    'name' => __( 'Footer Press', 'rgpstheme' ),
+    'description' => __( 'Press in Footer.', 'rgpstheme' ),
+    'before_widget' => '<div id="%1$s" class="widget footer-press %2$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h4 class=" footer-press-title widgettitle">',
+    'after_title' => '</h4>',
+  ));
 
 	/*
 	to add more sidebars or widgetized areas, just copy
