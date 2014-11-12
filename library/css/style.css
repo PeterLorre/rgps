@@ -1413,11 +1413,11 @@ style a page via class
 }
 .home .hero-main .cta-button-hero-main {
   display: block;
-  margin: 2em auto 1em;
+  margin: 3em auto 1em;
   width: 200px;
   text-align: center;
   background: #77ba6b;
-  padding: .5em;
+  padding: .9em;
   border-radius: 5px;
   border: 2px solid #77ba6b;
   color: white;
