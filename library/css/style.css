@@ -1599,6 +1599,13 @@ style a page via class
 }
 
 /* custom page template page */
+.page-template-page-about-php #content {
+  background: green url("../images/office-bg.jpg") no-repeat 0 75%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* individual page template (i.e. body.page-template-contact-php */
 /* individual page template (i.e. body.page-template-contact-php */
 /* replace the number to the corresponding page number */
 /* parent page template */

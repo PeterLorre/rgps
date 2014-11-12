@@ -248,6 +248,13 @@ style a page via class
 		}
 	}
 }                 /* custom page template page */
+.page-template-page-about-php {
+	#content{
+		background: green url('../images/office-bg.jpg') no-repeat 0 75%;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+}      /* individual page template (i.e. body.page-template-contact-php */
 	.page-template-page-php {}      /* individual page template (i.e. body.page-template-contact-php */
 	.page-paged-1 {}                /* replace the number to the corresponding page number */
 	.page-parent {}                 /* parent page template */
