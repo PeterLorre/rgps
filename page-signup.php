@@ -1,3 +1,8 @@
+<?php
+
+ //Template Name: Sign Up
+ 
+ ?>
 <?php get_header(); ?>
 
 			<div id="content">

@@ -1,7 +1,13 @@
+<?php
+
+ //Template Name: About Us
+ 
+ ?>
+
 <?php get_header(); ?>
 
 			<div id="content">
-
+TESTING
 				<div id="inner-content" class="wrap cf">
 
 						<div id="main" class="m-all cf" role="main">

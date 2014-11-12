@@ -1,3 +1,8 @@
+<?php
+
+ //Template Name: Pricing
+ 
+ ?>
 <?php get_header(); ?>
 
 			<div id="content">
