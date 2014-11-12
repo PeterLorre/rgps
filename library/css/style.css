@@ -84,6 +84,7 @@ html {
   /* 2 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
+  font-size: 100%;
 }
 
 /**
@@ -1459,6 +1460,7 @@ style a page via class
 .home .how-it-works div blockquote {
   color: #f8f9fa;
   text-align: center;
+  border-left: 0;
   margin: 1.5em 10px;
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
@@ -1821,6 +1823,9 @@ and more scalable.
   the style.scss file where it's relevant. We want to
   keep this file as small as possible!
   */
+}
+.nav li a:hover, .nav li a:focus {
+  background: none;
 }
 .nav li ul.sub-menu li a,
 .nav li ul.children li a {
@@ -2612,6 +2617,7 @@ you can add resource intensive styles.
   }
   .nav li a:hover, .nav li a:focus {
     color: white;
+    background: #d34f4f;
   }
   .nav li ul.sub-menu,
   .nav li ul.children {

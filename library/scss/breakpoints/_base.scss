@@ -104,7 +104,7 @@ style a page via class
 			blockquote{
 				color: $light-gray;
 				text-align: center;
-				// border-left: 4px solid $gray;
+				border-left: 0;
 				margin: 1.5em 10px;
 				// padding: 0.5em 10px;
 				quotes: "\201C""\201D""\2018""\2019";
@@ -467,7 +467,7 @@ and more scalable.
 			keep this file as small as possible!
 			*/
 			&:hover, &:focus {
-
+				background: none;
 			}
 		}
 

@@ -404,6 +404,7 @@ body#tinymce.wp-editor html {
   /* 2 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
+  font-size: 100%;
 }
 body#tinymce.wp-editor body {
   margin: 0;
