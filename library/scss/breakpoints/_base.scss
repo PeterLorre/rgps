@@ -82,7 +82,7 @@ style a page via class
 		border-top: 10px solid $red;
 		div{
 			padding: 0 .25em;
-			background: $green;
+			background: rgba(255,255,255,.2);
 			margin: 1em 0;
 			h3{
 				color: $white;
@@ -1108,6 +1108,7 @@ FOOTER STYLES
 		border-bottom: 2px solid $gray;
 		padding-bottom: 5px;
 		margin: 1em 0 0;
+		font-size: 16px;
 	}
 	ul{
 		margin: 0;
@@ -1123,7 +1124,7 @@ FOOTER STYLES
 		@include rounded(3px);
 			&:hover, &:focus{
 				background: rgba(255,255,255,.1);
-				padding-left: .5em;
+				padding-left: .2em;
 			}
 	}
 	span{
