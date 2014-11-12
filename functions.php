@@ -277,3 +277,16 @@ and be up and running in seconds.
 
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>
+
+<?php
+/*---------------------------------
+Calling Font Awesome CDN
+----------------------------------*/
+
+add_action( 'wp_enqueue_scripts', 'techadvice_enqueue_awesome' );
+
+function techadvice_enqueue_awesome() {
+    wp_enqueue_style( 'prefix-font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css', array(), '4.1.0' );
+}
+
+?>
