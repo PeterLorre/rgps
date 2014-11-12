@@ -25,8 +25,8 @@ body {
 }
 
 /*Selecting styles*/
-::-moz-selection { color: $soft-white;  background: $green; }
-::selection      { color: $soft-white;  background: $green; } 
+::-moz-selection { color: $soft-white;  background: $blue; }
+::selection      { color: $soft-white;  background: $blue; } 
 
 /********************
 WORDPRESS BODY CLASSES
@@ -68,7 +68,7 @@ style a page via class
 			// text-transform: uppercase;
 			color: $white;
 			text-decoration: none;
-			// font-weight: 700;
+			font-weight: 700;
 		}
 	}
 	h1{
@@ -80,6 +80,7 @@ style a page via class
 	.how-it-works{
 		background: $dark-gray;
 		border-top: 10px solid $red;
+		border-bottom: 10px solid $green;
 		div{
 			padding: 0 .25em;
 			background: rgba(255,255,255,.2);
@@ -130,7 +131,6 @@ style a page via class
 			padding: .75em;
 			border-radius: 5px;
 			border: 2px solid $red;
-			text-transform: uppercase;
 			color: $white;
 			text-decoration: none;
 			font-weight: 700;

@@ -1376,12 +1376,12 @@ body {
 /*Selecting styles*/
 ::-moz-selection {
   color: #ebeff2;
-  background: #77ba6b;
+  background: #8fb1d7;
 }
 
 ::selection {
   color: #ebeff2;
-  background: #77ba6b;
+  background: #8fb1d7;
 }
 
 /********************
@@ -1422,6 +1422,7 @@ style a page via class
   border: 2px solid #77ba6b;
   color: white;
   text-decoration: none;
+  font-weight: 700;
 }
 .home h1 {
   color: white;
@@ -1432,6 +1433,7 @@ style a page via class
 .home .how-it-works {
   background: #444444;
   border-top: 10px solid #cd4948;
+  border-bottom: 10px solid #77ba6b;
 }
 .home .how-it-works div {
   padding: 0 .25em;
@@ -1481,7 +1483,6 @@ style a page via class
   padding: .75em;
   border-radius: 5px;
   border: 2px solid #cd4948;
-  text-transform: uppercase;
   color: white;
   text-decoration: none;
   font-weight: 700;
@@ -2624,6 +2625,9 @@ you can add resource intensive styles.
   ********************/
   .home .how-it-works div h3 {
     border-bottom: 3px solid #777777;
+  }
+  .home .how-it-works div img {
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.3);
   }
 
   .wrap {
