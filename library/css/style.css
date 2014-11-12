@@ -2450,7 +2450,6 @@ you can add resource intensive styles.
     transition: all 0.1s ease-in-out;
     transform: translate(1px, 2px);
     box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
-    color: #77ba6b;
   }
 
   /*END HOME*/
