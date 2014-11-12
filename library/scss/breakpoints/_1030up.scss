@@ -32,6 +32,19 @@ style a page via class
 			}
 		}
 	}
+}/* END Home */
+
+.page-template{
+	.footer{
+		.footer-widgets{
+			.footer-trial{
+				display: block;
+			}
+			.footer-blog{
+				margin-left: 0;
+			}
+		}
+	}
 }
 
 .wrap {

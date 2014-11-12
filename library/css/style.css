@@ -1607,11 +1607,7 @@ style a page via class
   display: none;
 }
 .page-template .footer .footer-widgets .widget {
-  width: 21%;
-}
-.page-template .footer .footer-widgets .footer-trial {
-  margin-left: 0;
-  width: 35%;
+  width: 100%;
 }
 
 /* custom page template page */
@@ -2492,6 +2488,17 @@ you can add resource intensive styles.
   }
 
   /*END HOME*/
+  .page-template .footer .guarantee, .page-template .footer .logo-footer {
+    display: none;
+  }
+  .page-template .footer .footer-widgets .widget {
+    width: 21%;
+  }
+  .page-template .footer .footer-widgets .footer-trial {
+    margin-left: 0;
+    width: 35%;
+  }
+
   /*********************
   LAYOUT & GRID STYLES
   *********************/
@@ -2691,6 +2698,14 @@ you can add resource intensive styles.
   }
   .home .how-it-works div img {
     box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+
+  /* END Home */
+  .page-template .footer .footer-widgets .footer-trial {
+    display: block;
+  }
+  .page-template .footer .footer-widgets .footer-blog {
+    margin-left: 0;
   }
 
   .wrap {

@@ -106,6 +106,23 @@ style a page via class
 	}
 }/*END HOME*/
 
+.page-template{
+	.footer{
+		.guarantee, .logo-footer{
+			display: none;
+		}
+		.footer-widgets{
+			.widget{
+				width: 21%;
+			}
+			.footer-trial{
+				margin-left: 0;
+				width: 35%;
+			}
+		}
+	}
+}
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/
