@@ -51,11 +51,11 @@
 						<div class="social">
 							<h3>Connect With Us:</h3>
 							<div class="icons">
-							<ul class="cf">
-								<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/library/images/social/facebook-icon.png" alt="Find us on Facebook."></a></li>
-								<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/library/images/social/linkedin-icon.png" alt="Connect on Linkedin."></a></li>
-								<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/library/images/social/twitter-icon.png" alt="Follow us on Twitter."></a></li>
-								<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/library/images/social/youtube-icon.png" alt="Watch our Youtube videos."></a></li>
+								<ul class="cf">
+									<li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+									<li><a href="#"><i class="fa fa-youtube fa-2x"></i></a></li>
 								</ul>
 							</div>
 						</div>								

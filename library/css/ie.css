@@ -330,8 +330,14 @@ style a page via class
   font-weight: 700;
 }
 .home .social ul {
-  width: 252px;
+  width: 362px;
   margin: 2em auto;
+}
+.home .social a:active {
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  transform: translate(1px, 2px);
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
 /*END HOME*/

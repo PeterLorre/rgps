@@ -185,12 +185,25 @@ style a page via class
 			letter-spacing: .2em;
 		}
 		ul{
-			width: 150px;
+			width: 181px;
 			margin: 1em auto;
 		}
 		li{
 			float: left;
 			margin: .15em;
+		}
+		a{
+			color: #444;
+			background: #fff;
+			display: block;
+			width: 75px;
+			font-size: 21px;
+			text-align: center;
+			padding: .5em;
+			border-radius: 6px;
+			margin: 0 0 .5em .5em;
+			box-shadow: 7px 7px 0 rgba(0,0,0,.2);
+			@include transition(all 0.2s ease-in-out);
 		}
 	}
 }/* END home page */
@@ -202,7 +215,7 @@ style a page via class
 	.search-results {}              /* search result page */
 	.search-no-results {}           /* no results search page */
 	.search-paged-1 {}              /* individual paged search (i.e. body.search-paged-3) */
-.error404 {}                      /* 404 page */
+.error404 {}					  /* 404 page */
 .single {}                        /* single post page */
 	.postid-1 {}                    /* individual post page by id (i.e. body.postid-73) */
 	.single-paged-1 {}              /* individual paged single (i.e. body.single-paged-3) */
