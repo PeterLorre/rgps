@@ -158,9 +158,6 @@ style a page via class
 			}				
 		}
 	}
-	.connect{
-		height: 250px;
-	}
 	.call-us{
 		h3{
 			margin: 1em auto 0;
@@ -1089,21 +1086,72 @@ FOOTER STYLES
 	background-color: $dark-gray;
 	color: $light-gray;
 	border-top: 14px $red solid;
-	height: 300px;
+	.guarantee{
+		display: none;
+	}
+	.logo-footer{
+		display: none;
+	}
+	.copyright{
+		color: $blue;
+		font-size: 13px;
+		font-style: italic;
+		text-align: center;
+		background: #333;
+		width: 100%;
+		display: inline-block;
+		margin: 0;
+		padding: 1em 0;
+	}
 }
 
-.guarantee{
-	position: absolute;
-	top: -115px;
-	left: 25px;
-	z-index: 2;
+/*Footer Widgets*/
+.footer-widgets{
+	padding: 0 15px;
+	margin-bottom: 1em;
+	font-size: 14px;
+	.widget{
+		min-height: 230px;
+	}
+	h4{
+		color: $green;
+		border-bottom: 2px solid $gray;
+		padding-bottom: 5px;
+		margin: 1em 0 0;
+	}
+	ul{
+		margin: 0;
+	}
+	li{
+	}
+	a{	
+		display: block;
+		text-decoration: none;
+		padding: .6em;
+		padding-left: 0;
+		@include transition(all 0.2s ease-in-out);
+		@include rounded(3px);
+			&:hover, &:focus{
+				background: rgba(255,255,255,.1);
+				padding-left: .5em;
+			}
+	}
+	span{
+		font-size: 12px;
+		font-style: italic;
+	}
+	.footer-trial{
+		h4{
+			color: $gold;
+			font-size: 22px;
+			border-bottom: none;
+		}
+	}
+	.footer-blog{}
+	.footer-links{}
+	.footer-press{}
 }
-.logo-footer{
-	position: absolute;
-	top: -105px;
-	left: 308px;
-	z-index: 2;
-}
+	
 
 	/*
 	if you checked out the link above:

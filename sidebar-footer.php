@@ -1,75 +1,75 @@
-				<div id="sidebar1" class="sidebar m-all t-1of3 d-2of7 last-col cf" role="complementary">
 
-					<!-- Trial Information Text Widget -->
-					<?php if ( is_active_sidebar( 'footer-trial' ) ) : ?>
-						<?php dynamic_sidebar( 'footer-trial' ); ?>
+<div class="footer-widgets cf" role="complementary">
 
-					<?php else : ?>
+	<!-- Trial Information Text Widget -->
+	<?php if ( is_active_sidebar( 'footer-trial' ) ) : ?>
+		<?php dynamic_sidebar( 'footer-trial' ); ?>
 
-						<?php	
-							echo '<h3 style="color:red;">This content shows up if there are no widgets defined in the backend.</h3>';
-						?>
+	<?php else : ?>
 
-						<div class="no-widgets">
-							<p><?php _e( 'This is a widget ready area. Add some and they will appear here.', 'rgpstheme' );  ?></p>
-						</div>
+		<?php	
+			echo '<h3 style="color:red;">This content shows up if there are no widgets defined in the backend.</h3>';
+		?>
 
-					<?php endif; ?>
+		<div class="no-widgets">
+			<p><?php _e( 'This is a widget ready area. Add some and they will appear here.', 'rgpstheme' );  ?></p>
+		</div>
+
+	<?php endif; ?>
+
+	<?php if ( is_active_sidebar( 'footer-blog' ) ) : ?>
+
+		<?php dynamic_sidebar( 'footer-blog' ); ?>
+
+	<?php else : ?>
+
+		<?php
+			/*
+			 * This content shows up if there are no widgets defined in the backend.
+			*/
+		?>
+
+		<div class="no-widgets">
+			<p><?php _e( 'This is a widget ready area. Add some and they will appear here.', 'rgpstheme' );  ?></p>
+		</div>
+
+	<?php endif; ?>
+
+	<?php if ( is_active_sidebar( 'footer-links' ) ) : ?>
+
+		<?php dynamic_sidebar( 'footer-links' ); ?>
+
+	<?php else : ?>
+
+		<?php
+			/*
+			 * This content shows up if there are no widgets defined in the backend.
+			*/
+		?>
+
+		<div class="no-widgets">
+			<p><?php _e( 'This is a widget ready area. Add some and they will appear here.', 'rgpstheme' );  ?></p>
+		</div>
+
+	<?php endif; ?>
+
+	<?php if ( is_active_sidebar( 'footer-press' ) ) : ?>
+
+		<?php dynamic_sidebar( 'footer-press' ); ?>
+
+	<?php else : ?>
+
+		<?php
+			/*
+			 * This content shows up if there are no widgets defined in the backend.
+			*/
+		?>
+
+		<div class="no-widgets">
+			<p><?php _e( 'This is a widget ready area. Add some and they will appear here.', 'rgpstheme' );  ?></p>
+		</div>
+
+	<?php endif; ?>
+</div>
 
 
-					<?php if ( is_active_sidebar( 'footer-blog' ) ) : ?>
-
-						<?php dynamic_sidebar( 'footer-blog' ); ?>
-
-					<?php else : ?>
-
-						<?php
-							/*
-							 * This content shows up if there are no widgets defined in the backend.
-							*/
-						?>
-
-						<div class="no-widgets">
-							<p><?php _e( 'This is a widget ready area. Add some and they will appear here.', 'rgpstheme' );  ?></p>
-						</div>
-
-					<?php endif; ?>
-
-					<?php if ( is_active_sidebar( 'footer-links' ) ) : ?>
-
-						<?php dynamic_sidebar( 'footer-links' ); ?>
-
-					<?php else : ?>
-
-						<?php
-							/*
-							 * This content shows up if there are no widgets defined in the backend.
-							*/
-						?>
-
-						<div class="no-widgets">
-							<p><?php _e( 'This is a widget ready area. Add some and they will appear here.', 'rgpstheme' );  ?></p>
-						</div>
-
-					<?php endif; ?>
-
-					<?php if ( is_active_sidebar( 'footer-press' ) ) : ?>
-
-						<?php dynamic_sidebar( 'footer-press' ); ?>
-
-					<?php else : ?>
-
-						<?php
-							/*
-							 * This content shows up if there are no widgets defined in the backend.
-							*/
-						?>
-
-						<div class="no-widgets">
-							<p><?php _e( 'This is a widget ready area. Add some and they will appear here.', 'rgpstheme' );  ?></p>
-						</div>
-
-					<?php endif; ?>
-
-
-				</div>

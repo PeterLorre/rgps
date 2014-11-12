@@ -46,6 +46,9 @@ style a page via class
 	font-size: 47px;
 
 }
+	.connect{
+		min-height: 250px;
+	}
 
 .call-us{
 	width: 60%;
@@ -64,5 +67,38 @@ Primary Menu
 	padding: 0 1em;
 	a{
 		font-size: 1em;
+	}
+}
+
+.footer {
+	.guarantee{
+		display: block;
+		position: absolute;
+		top: -115px;
+		left: 25px;
+		z-index: 2;
+	}
+	.logo-footer{
+		display: block;
+		position: absolute;
+		top: -105px;
+		left: 308px;
+		z-index: 2;
+	}
+	/*Footer Widgets*/
+	.footer-widgets{
+		.widget{
+			width: 23%;
+		}
+		.footer-trial{
+			display: none;
+			margin-left: 250px;
+			width: 26%;
+		}
+		.footer-blog{
+			margin-left: 275px;
+		}
+		.footer-links{}
+		.footer-press{}
 	}
 }

@@ -38,3 +38,23 @@ style a page via class
 		}
 	}
 }
+
+.footer{
+	/*Footer Widgets*/
+	.footer-widgets{
+		.widget{
+			width: 18%;
+		}
+		.footer-trial{
+			display: block;
+			margin-left: 230px;
+			margin-right: 20px;
+			width: 25%;
+		}
+		.footer-blog{
+			margin-left: 0;
+		}
+		.footer-links{}
+		.footer-press{}
+	}
+}

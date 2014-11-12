@@ -54,6 +54,7 @@ style a page via class
 		}
 	}
 	.call-us{
+
 		h3{
 			letter-spacing: .2em;
 			font-size: 40px;
@@ -236,12 +237,12 @@ SIDEBARS & ASIDES
 	}
 
 	.widget {
-		padding: 0 10px;
-		margin: 2.2em 0;
+		// padding: 0 10px;
+		// margin: 2.2em 0;
 
 		ul {
 			li {
-				margin-bottom: 0.75em;
+				// margin-bottom: 0.75em;
 
 				&:first-child {}
 				&:last-child {}
@@ -354,6 +355,13 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
+.footer{
+	.copyright{
+		text-align: left;
+		padding-left: 15px;
+	}
+}
+
 .footer-links {
 	ul {
 		li {
