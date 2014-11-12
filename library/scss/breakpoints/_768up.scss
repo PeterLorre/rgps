@@ -94,10 +94,15 @@ style a page via class
 			width: 362px;
 			margin: 2em auto;
 		}
+		a:hover{
+			background: $white;
+			color: #555;
+		}
 		a:active{
 			@include transition(all 0.1s ease-in-out);
 			transform: translate(1px, 2px);
 			box-shadow: 3px 3px 0 rgba(0,0,0,0.1);
+			color: #77ba6b;
 		}
 	}
 }/*END HOME*/
