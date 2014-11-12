@@ -250,7 +250,7 @@ style a page via class
 	.breadcrumbs{
 		margin: 0;
 		display: block;
-		background: #87CB93;
+		background: rgba(255,255,255,.1);
 		padding: .5em 0 .5em .5em;
 		span a{
 			color: #444;
@@ -279,11 +279,7 @@ style a page via class
 	}
 }                 /* custom page template page */
 .page-template-page-about-php {
-	#content{
-		background: $soft-white url('../images/office-bg.jpg') no-repeat 0 75%;
-		background-size: cover;
-		background-attachment: fixed;
-	}
+	#content{}
 }      /* individual page template (i.e. body.page-template-contact-php */
 	.page-template-page-php {}      /* individual page template (i.e. body.page-template-contact-php */
 	.page-paged-1 {}                /* replace the number to the corresponding page number */

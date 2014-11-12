@@ -356,6 +356,34 @@ style a page via class
   width: 35%;
 }
 
+.page-template-page-about-php #content {
+  background: #ebeff2 url("../images/about-bg.jpg") no-repeat 0 75%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* individual page template (i.e. body.page-template-contact-php */
+.page-template-page-pricing-php #content {
+  background: #ebeff2 url("../images/pricing-bg.jpg") no-repeat 0 75%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* individual page template (i.e. body.page-template-contact-php */
+.page-template-page-contact-php #content {
+  background: #ebeff2 url("../images/contact-bg.jpg") no-repeat 0 75%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* individual page template (i.e. body.page-template-contact-php */
+.page-template-page-signup-php #content {
+  background: #ebeff2 url("../images/signup-bg.jpg") no-repeat 0 75%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* individual page template (i.e. body.page-template-contact-php */
 /*********************
 LAYOUT & GRID STYLES
 *********************/

@@ -1600,7 +1600,7 @@ style a page via class
 .page-template .breadcrumbs {
   margin: 0;
   display: block;
-  background: #87CB93;
+  background: rgba(255, 255, 255, 0.1);
   padding: .5em 0 .5em .5em;
 }
 .page-template .breadcrumbs span a {
@@ -1625,12 +1625,6 @@ style a page via class
 }
 
 /* custom page template page */
-.page-template-page-about-php #content {
-  background: #ebeff2 url("../images/office-bg.jpg") no-repeat 0 75%;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 /* individual page template (i.e. body.page-template-contact-php */
 /* individual page template (i.e. body.page-template-contact-php */
 /* replace the number to the corresponding page number */
@@ -2513,6 +2507,34 @@ you can add resource intensive styles.
     width: 35%;
   }
 
+  .page-template-page-about-php #content {
+    background: #ebeff2 url("../images/about-bg.jpg") no-repeat 0 75%;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  /* individual page template (i.e. body.page-template-contact-php */
+  .page-template-page-pricing-php #content {
+    background: #ebeff2 url("../images/pricing-bg.jpg") no-repeat 0 75%;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  /* individual page template (i.e. body.page-template-contact-php */
+  .page-template-page-contact-php #content {
+    background: #ebeff2 url("../images/contact-bg.jpg") no-repeat 0 75%;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  /* individual page template (i.e. body.page-template-contact-php */
+  .page-template-page-signup-php #content {
+    background: #ebeff2 url("../images/signup-bg.jpg") no-repeat 0 75%;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  /* individual page template (i.e. body.page-template-contact-php */
   /*********************
   LAYOUT & GRID STYLES
   *********************/
