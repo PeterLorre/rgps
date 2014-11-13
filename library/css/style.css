@@ -2438,10 +2438,6 @@ FOOTER STYLES
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-.footer-widgets li > a:hover, .footer-widgets li > a:focus {
-  background: rgba(255, 255, 255, 0.1);
-  padding-left: .2em;
-}
 .footer-widgets span {
   font-size: 12px;
   font-style: italic;
@@ -3002,6 +2998,11 @@ you can add resource intensive styles.
   .footer .copyright {
     text-align: left;
     padding-left: 15px;
+  }
+
+  .footer-widgets li > a:hover, .footer-widgets li > a:focus {
+    background: #cd4948;
+    padding-left: .2em;
   }
 
   .footer-links ul li {

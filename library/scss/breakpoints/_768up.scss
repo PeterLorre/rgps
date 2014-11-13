@@ -457,6 +457,14 @@ mobile. Make sure to double check these!
 		padding-left: 15px;
 	}
 }
+.footer-widgets{
+	li>a{	
+	&:hover, &:focus{
+		background: $red;
+		padding-left: .2em;
+	}
+}
+}
 
 .footer-links {
 	ul {

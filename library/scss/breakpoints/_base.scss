@@ -1238,10 +1238,6 @@ FOOTER STYLES
 		padding-left: 0;
 		@include transition(all 0.2s ease-in-out);
 		@include rounded(3px);
-			&:hover, &:focus{
-				background: rgba(255,255,255,.1);
-				padding-left: .2em;
-			}
 	}
 	span{
 		font-size: 12px;
