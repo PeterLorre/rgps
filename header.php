@@ -58,6 +58,15 @@
 				'fallback_cb' => ''                             // fallback function (if there is one)
 				)); ?>
 
+				<?php // Login Modal ?>
+				<div class="modal fade login-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-sm">
+				    <div class="modal-content cf">
+				      <?php echo do_shortcode( '[contact-form-7 id="51" title="Member Login"]' ); ?>
+				    </div>
+				  </div>
+				</div>
+
 			</div>
 
 			<header class="header" role="banner">

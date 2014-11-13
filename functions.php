@@ -280,13 +280,14 @@ and be up and running in seconds.
 add_filter( 'nav_menu_link_attributes', 'rgps_modal_data', 10, 3 );
 function rgps_modal_data( $atts, $item, $args ) {
 
+  //Login Modal
   // The ID of the target menu item
   $menu_target = 5;
 
   // inspect $item
   if ($item->ID == $menu_target) {
     $atts['data-toggle'] = 'modal';
-    $atts['data-target'] = '.bs-example-modal-sm';
+    $atts['data-target'] = '.login-modal-sm';
   }
   return $atts;
 }
