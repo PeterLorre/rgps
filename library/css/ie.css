@@ -657,6 +657,21 @@ Primary Menu
   margin-left: 275px;
 }
 
+                                     /*//////////////////////////////////////
+BOOTSTRAP EDITS///////////////////////*/
+/*Kill the screen shift on modals*/
+html body.modal-open[style] {
+  padding-right: 0px !important;
+}
+
+.modal {
+  overflow-y: auto;
+}
+
+.modal-open {
+  overflow: auto;
+}
+
 /*
 you can call the larger styles if you want, but there's really no need
 */
