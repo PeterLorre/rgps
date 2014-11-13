@@ -276,9 +276,8 @@ and be up and running in seconds.
 
 
 
-/* DON'T DELETE THIS CLOSING TAG */ ?>
 
-<?php
+
 /*-------------------------------------------------
 Calling Font Awesome CDN, Bootstrap CDN CSS and JS
 ---------------------------------------------------*/
@@ -295,4 +294,30 @@ function rgps_enqueue_bootstrap_css() {
     wp_enqueue_style( 'prefix-bootstrap_css', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css', array(), '4.1.0' );
 }
 
-?>
+add_action( 'wp_enqueue_scripts', 'rgps_enqueue_bootstrap_js' );
+
+function rgps_enqueue_bootstrap_js() {
+    wp_enqueue_style( 'prefix-bootstrap_js', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js', array(), '4.1.0' );
+}
+
+
+
+/* Add data-toggle attribute to wp menu item */
+add_filter( 'nav_menu_link_attributes', 'rgps_modal_data', 10, 3 );
+function rgps_modal_data( $atts, $item, $args ) {
+
+  // The ID of the target menu item
+  $menu_target = 5;
+
+  // inspect $item
+  if ($item->ID == $menu_target) {
+    $atts['data-toggle'] = 'modal';
+    $atts['data-target'] = '.bs-example-modal-sm';
+  }
+  return $atts;
+}
+
+
+
+/* DON'T DELETE THIS CLOSING TAG */ ?>
+
