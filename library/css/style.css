@@ -1618,7 +1618,7 @@ style a page via class
   letter-spacing: .2em;
   text-decoration: none;
 }
-.home .social h3 {
+.home .social-icons-lrg h3 {
   margin: 1em auto 0;
   display: block;
   text-align: center;
@@ -1629,15 +1629,15 @@ style a page via class
   text-transform: uppercase;
   letter-spacing: .2em;
 }
-.home .social ul {
+.home .social-icons-lrg ul {
   width: 181px;
   margin: 1em auto;
 }
-.home .social li {
+.home .social-icons-lrg li {
   float: left;
   margin: .15em;
 }
-.home .social a {
+.home .social-icons-lrg a {
   color: #444;
   background: #ebeff2;
   display: block;
@@ -1865,6 +1865,10 @@ HEADER STYLES
   background: #444444;
 }
 
+.social-icons-sml {
+  display: none;
+}
+
 .menu-login ul {
   float: right;
 }
@@ -1874,6 +1878,7 @@ HEADER STYLES
 .menu-login a {
   font-size: 13px;
   float: left;
+  padding: 1em !important;
 }
 
 .logo {
@@ -2421,7 +2426,7 @@ FOOTER STYLES
   color: #77ba6b;
   border-bottom: 2px solid #777777;
   padding-bottom: 5px;
-  margin: 1em 0 .5;
+  margin: 1em 0 .5em;
   font-size: 16px;
 }
 .footer-widgets ul {
@@ -2766,15 +2771,15 @@ you can add resource intensive styles.
     font-size: 27px;
     font-weight: 700;
   }
-  .home .social ul {
+  .home .social-icons-lrg ul {
     width: 362px;
     margin: 2em auto;
   }
-  .home .social a:hover {
+  .home .social-icons-lrg a:hover {
     background: white;
     color: #555;
   }
-  .home .social a:active {
+  .home .social-icons-lrg a:active {
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
     transform: translate(1px, 2px);
@@ -2842,6 +2847,29 @@ you can add resource intensive styles.
   /*********************
   HEADER STYLES
   *********************/
+  .social-icons-sml {
+    display: block;
+    float: left;
+  }
+  .social-icons-sml ul {
+    margin: .5em auto .5em 1em;
+  }
+  .social-icons-sml li {
+    float: left;
+  }
+  .social-icons-sml a {
+    color: #77ba6b;
+    padding: .5em;
+    font-size: 18px;
+  }
+  .social-icons-sml a:hover, .social-icons-sml a:active {
+    color: #94c98a;
+  }
+
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+
   #inner-header {
     height: 115px;
   }
@@ -3078,7 +3106,7 @@ you can add resource intensive styles.
     margin: 0;
   }
 
-  .social {
+  .social-icons-lrg {
     width: 25%;
     float: left;
   }

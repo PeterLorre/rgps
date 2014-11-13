@@ -44,6 +44,15 @@
 		<div id="container">
 
 			<div class="top-bar cf">
+				<div class="social-icons-sml">
+					<ul class="cf">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+					</ul>
+				</div>
+
 				<button class="navbar-toggle" type="button" data-toggle="collapse" data-trigger="focus" data-target=".bs-navbar-collapse">
 					<span class="icon-bar"></span> 
 					<span class="icon-bar"></span>

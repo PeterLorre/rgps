@@ -48,7 +48,7 @@
 
 						</div>
 
-						<div class="social">
+						<div class="social-icons-lrg">
 							<h3>Connect With Us:</h3>
 							<div class="icons">
 								<ul class="cf">

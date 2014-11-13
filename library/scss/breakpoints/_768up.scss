@@ -89,7 +89,7 @@ style a page via class
 			font-weight: 700;
 		}
 	}
-	.social{
+	.social-icons-lrg{
 		ul{
 			width: 362px;
 			margin: 2em auto;
@@ -175,6 +175,27 @@ HEADER STYLES
 *********************/
 
 .header {}
+.social-icons-sml{
+	display: block;
+	float: left;
+	ul{
+		margin: .5em auto .5em 1em;
+	}
+	li{
+		float: left;
+	}
+	a{
+		color: $green;
+		padding: .5em;
+		font-size: 18px;
+		&:hover, &:active{
+			color: lighten($green, 9%);
+		}
+	}
+}
+.navbar-collapse.collapse{
+	display: none!important;
+}
 #inner-header{
 	height: 115px;
 }

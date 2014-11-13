@@ -332,15 +332,15 @@ style a page via class
   font-size: 27px;
   font-weight: 700;
 }
-.home .social ul {
+.home .social-icons-lrg ul {
   width: 362px;
   margin: 2em auto;
 }
-.home .social a:hover {
+.home .social-icons-lrg a:hover {
   background: white;
   color: #555;
 }
-.home .social a:active {
+.home .social-icons-lrg a:active {
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
   transform: translate(1px, 2px);
@@ -408,6 +408,29 @@ LAYOUT & GRID STYLES
 /*********************
 HEADER STYLES
 *********************/
+.social-icons-sml {
+  display: block;
+  float: left;
+}
+.social-icons-sml ul {
+  margin: .5em auto .5em 1em;
+}
+.social-icons-sml li {
+  float: left;
+}
+.social-icons-sml a {
+  color: #77ba6b;
+  padding: .5em;
+  font-size: 18px;
+}
+.social-icons-sml a:hover, .social-icons-sml a:active {
+  color: #94c98a;
+}
+
+.navbar-collapse.collapse {
+  display: none !important;
+}
+
 #inner-header {
   height: 115px;
 }
@@ -636,7 +659,7 @@ style a page via class
   margin: 0;
 }
 
-.social {
+.social-icons-lrg {
   width: 25%;
   float: left;
 }
