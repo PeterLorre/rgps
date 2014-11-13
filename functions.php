@@ -276,33 +276,7 @@ and be up and running in seconds.
 
 
 
-
-
-/*-------------------------------------------------
-Calling Font Awesome CDN, Bootstrap CDN CSS and JS
----------------------------------------------------*/
-
-add_action( 'wp_enqueue_scripts', 'rgps_enqueue_awesome' );
-
-function rgps_enqueue_awesome() {
-    wp_enqueue_style( 'prefix-font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css', array(), '4.1.0' );
-}
-
-add_action( 'wp_enqueue_scripts', 'rgps_enqueue_bootstrap_css' );
-
-function rgps_enqueue_bootstrap_css() {
-    wp_enqueue_style( 'prefix-bootstrap_css', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css', array(), '4.1.0' );
-}
-
-add_action( 'wp_enqueue_scripts', 'rgps_enqueue_bootstrap_js' );
-
-function rgps_enqueue_bootstrap_js() {
-    wp_enqueue_style( 'prefix-bootstrap_js', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js', array(), '4.1.0' );
-}
-
-
-
-/* Add data-toggle attribute to wp menu item */
+/* Add data-toggle attribute to a specific wp menu item */
 add_filter( 'nav_menu_link_attributes', 'rgps_modal_data', 10, 3 );
 function rgps_modal_data( $atts, $item, $args ) {
 

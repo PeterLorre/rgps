@@ -131,6 +131,12 @@ function rgps_scripts_and_styles() {
 		// modernizr (without media query polyfill)
 		wp_register_script( 'rgps-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
 
+		// register bootstrap cdn stylsheet
+		wp_register_style( 'rgps-bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css', array(), '', 'all' );
+
+		// register font-awesome cdn stylesheet
+		wp_register_style( 'rgps-font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css', array(), '', 'all' );
+
 		// register main stylesheet
 		wp_register_style( 'rgps-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
 
@@ -146,10 +152,12 @@ function rgps_scripts_and_styles() {
 		wp_register_script( 'rgps-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
 		
 		//adding scripts file in the footer
-		wp_register_script( 'rgps-bootstrap-js', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js', array( 'jquery' ), '', true );
+		wp_register_script( 'rgps-bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js', array( 'jquery' ), '', true );
 
 		// enqueue styles and scripts
 		wp_enqueue_script( 'rgps-modernizr' );
+		wp_enqueue_style( 'rgps-bootstrap' );
+		wp_enqueue_style( 'rgps-font-awesome' );
 		wp_enqueue_style( 'rgps-stylesheet' );
 		wp_enqueue_style( 'rgps-ie-only' );
 
@@ -162,7 +170,7 @@ function rgps_scripts_and_styles() {
 		*/
 		wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'rgps-js' );
-		wp_enqueue_script( 'rgps-bootstrap-js' );
+		wp_enqueue_script( 'rgps-bootstrap' );
 
 	}
 }
