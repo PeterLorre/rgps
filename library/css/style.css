@@ -2376,6 +2376,10 @@ C7F FORMS////////////////////////////*/
 /*
 Login Form
 */
+.login-modal-sm .modal-dialog.modal-sm {
+  width: 300px;
+  margin: 10% auto;
+}
 .login-modal-sm .wpcf7 {
   /*Alerts*/
 }

@@ -1279,6 +1279,7 @@ BOOTSTRAP EDITS//////////////////////*/
 
 
 
+
 /*//////////////////////////////////////
 C7F FORMS////////////////////////////*/
 
@@ -1286,6 +1287,11 @@ C7F FORMS////////////////////////////*/
 Login Form
 */
 .login-modal-sm{
+
+	.modal-dialog.modal-sm{
+		width: 300px;
+		margin: 10% auto;
+	}
 	.wpcf7{
 		form{
 			padding: 1em;
