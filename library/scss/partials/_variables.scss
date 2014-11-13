@@ -35,6 +35,7 @@ $meta-gray:         #9fa6b4;
 $tan:               #eceee5;
 
 $green:             #77ba6b;
+$dark-green:		#519A45;
 
 $pink:				#f55755;
 $red:				#CD4948;
@@ -45,7 +46,7 @@ $light-blue:	   #70a1d7;
 $blue:             #8fb1d7;
 
 $link-color:        $white;
-$link-hover:        darken($link-color, 9%);
+$link-hover:        $white;
 
 $border-color:      #ccc;
 $disabled-gray:     #cfcfcf;
