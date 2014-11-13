@@ -350,6 +350,9 @@ body#tinymce.wp-editor {
   Border Radius
   USAGE: @include rounded(4px);
   */
+  /*********************
+  TRANSFORM
+  *********************/
   width: 731px;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;

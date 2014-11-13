@@ -215,7 +215,51 @@ style a page via class
 	.search-results {}              /* search result page */
 	.search-no-results {}           /* no results search page */
 	.search-paged-1 {}              /* individual paged search (i.e. body.search-paged-3) */
-.error404 {}                      /* 404 page */
+.error404 {
+	::-moz-selection { color: $soft-white;  background: $dark-gray; }
+	::selection      { color: $soft-white;  background: $dark-gray; } 
+		background: $red;
+	.not-found{
+		border-top: 10px solid $dark-gray;
+		div{
+			@include rotate(-10);
+		}
+		h1{
+			color: $white;
+			font-size: 169px;
+			letter-spacing: -.1em;
+			text-align: center;
+			font-weight: 700;
+			margin: 0;
+			text-shadow: 0px 14px 0 #444;
+		}
+		h2{
+			text-align: center;
+			color: white;
+			font-size: 87px;
+			font-weight: 700;
+			margin-top: -51px;
+			letter-spacing: -.1em;
+			text-shadow: 0 10px 0 #444;
+			margin-bottom: 0;
+			line-height: .7em;
+		}
+		button{
+			margin: 0 auto 1em;
+			display: block;
+			background: #444;
+			padding: 1.3em 3em;
+			border: 0;
+			@include rounded(4px);
+			&:active{
+				outline: none;
+			}
+			a:hover, a:focus{
+				text-decoration: none;
+			}
+		}
+	}
+}                      /* 404 page */
 .single {}                        /* single post page */
 	.postid-1 {}                    /* individual post page by id (i.e. body.postid-73) */
 	.single-paged-1 {}              /* individual paged single (i.e. body.single-paged-3) */

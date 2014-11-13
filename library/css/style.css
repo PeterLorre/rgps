@@ -670,6 +670,9 @@ probably best not to use it. I mean, were you going to anyway? */
 Border Radius
 USAGE: @include rounded(4px);
 */
+/*********************
+TRANSFORM
+*********************/
 /******************************************************************
 Site Name:
 Author:
@@ -1568,6 +1571,64 @@ style a page via class
 /* search result page */
 /* no results search page */
 /* individual paged search (i.e. body.search-paged-3) */
+.error404 {
+  background: #cd4948;
+}
+.error404 ::-moz-selection {
+  color: #ebeff2;
+  background: #444444;
+}
+.error404 ::selection {
+  color: #ebeff2;
+  background: #444444;
+}
+.error404 .not-found {
+  border-top: 10px solid #444444;
+}
+.error404 .not-found div {
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+.error404 .not-found h1 {
+  color: white;
+  font-size: 169px;
+  letter-spacing: -.1em;
+  text-align: center;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 0px 14px 0 #444;
+}
+.error404 .not-found h2 {
+  text-align: center;
+  color: white;
+  font-size: 87px;
+  font-weight: 700;
+  margin-top: -51px;
+  letter-spacing: -.1em;
+  text-shadow: 0 10px 0 #444;
+  margin-bottom: 0;
+  line-height: .7em;
+}
+.error404 .not-found button {
+  margin: 0 auto 1em;
+  display: block;
+  background: #444;
+  padding: 1.3em 3em;
+  border: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.error404 .not-found button:active {
+  outline: none;
+}
+.error404 .not-found button a:hover, .error404 .not-found button a:focus {
+  text-decoration: none;
+}
+
 /* 404 page */
 /* single post page */
 /* individual post page by id (i.e. body.postid-73) */
