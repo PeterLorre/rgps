@@ -1880,6 +1880,18 @@ HEADER STYLES
   float: left;
   padding: 1em !important;
 }
+.menu-login .menu-login-home a:before {
+  content: "\f015";
+  font-family: "FontAwesome", serif;
+  color: white;
+  margin-right: 5px;
+}
+.menu-login .menu-login-member a:before {
+  content: "\f007";
+  font-family: "FontAwesome", serif;
+  color: white;
+  margin-right: 5px;
+}
 
 .logo {
   color: white;
@@ -2499,6 +2511,10 @@ Login Form
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
+.login-modal-sm .wpcf7 h3 {
+  color: white;
+  font-weight: 700;
+}
 .login-modal-sm .wpcf7 p {
   margin: 0;
   padding: 0;
@@ -2564,6 +2580,7 @@ Login Form
 .login-modal-sm .wpcf7 .forgot-password {
   color: #47823d;
   float: right;
+  padding: 0 !important;
 }
 .login-modal-sm .wpcf7 .wpcf7-not-valid-tip {
   /*Red Text*/
