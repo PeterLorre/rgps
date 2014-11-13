@@ -643,7 +643,7 @@ body#tinymce.wp-editor a, body#tinymce.wp-editor a:visited {
   /* on click */
 }
 body#tinymce.wp-editor a:hover, body#tinymce.wp-editor a:focus, body#tinymce.wp-editor a:visited:hover, body#tinymce.wp-editor a:visited:focus {
-  color: #e8e8e8;
+  color: white;
 }
 body#tinymce.wp-editor a:link, body#tinymce.wp-editor a:visited:link {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);

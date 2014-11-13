@@ -124,32 +124,43 @@ style a page via class
 }
 .page-template-page-about-php {
 	#content{
-		background: $soft-white url('../images/about-bg.jpg') no-repeat 0 75%;
+		background: $soft-white url('../images/bg-about.jpg') no-repeat 0 75%;
 		background-size: cover;
 		background-attachment: fixed;
 	}
 }      /* individual page template (i.e. body.page-template-contact-php */
 .page-template-page-pricing-php {
 	#content{
-		background: $soft-white url('../images/pricing-bg.jpg') no-repeat 0 75%;
+		background: $soft-white url('../images/bg-pricing.jpg') no-repeat 0 75%;
 		background-size: cover;
 		background-attachment: fixed;
 	}
 }      /* individual page template (i.e. body.page-template-contact-php */
 .page-template-page-contact-php {
 	#content{
-		background: $soft-white url('../images/contact-bg.jpg') no-repeat 0 75%;
+		background: $soft-white url('../images/bg-contact.jpg') no-repeat 0 75%;
 		background-size: cover;
 		background-attachment: fixed;
 	}
 }      /* individual page template (i.e. body.page-template-contact-php */
 .page-template-page-signup-php {
 	#content{
-		background: $soft-white url('../images/signup-bg.jpg') no-repeat 0 75%;
+		background: $soft-white url('../images/bg-signup.jpg') no-repeat 0 75%;
 		background-size: cover;
 		background-attachment: fixed;
 	}
 }      /* individual page template (i.e. body.page-template-contact-php */
+
+.error404{
+	.not-found{
+		div{
+			@include rotate(-10);
+		}
+		h1{
+			margin-top: 150px;
+		}
+	}
+}
 
 /*********************
 LAYOUT & GRID STYLES

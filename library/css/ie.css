@@ -360,33 +360,44 @@ style a page via class
 }
 
 .page-template-page-about-php #content {
-  background: #ebeff2 url("../images/about-bg.jpg") no-repeat 0 75%;
+  background: #ebeff2 url("../images/bg-about.jpg") no-repeat 0 75%;
   background-size: cover;
   background-attachment: fixed;
 }
 
 /* individual page template (i.e. body.page-template-contact-php */
 .page-template-page-pricing-php #content {
-  background: #ebeff2 url("../images/pricing-bg.jpg") no-repeat 0 75%;
+  background: #ebeff2 url("../images/bg-pricing.jpg") no-repeat 0 75%;
   background-size: cover;
   background-attachment: fixed;
 }
 
 /* individual page template (i.e. body.page-template-contact-php */
 .page-template-page-contact-php #content {
-  background: #ebeff2 url("../images/contact-bg.jpg") no-repeat 0 75%;
+  background: #ebeff2 url("../images/bg-contact.jpg") no-repeat 0 75%;
   background-size: cover;
   background-attachment: fixed;
 }
 
 /* individual page template (i.e. body.page-template-contact-php */
 .page-template-page-signup-php #content {
-  background: #ebeff2 url("../images/signup-bg.jpg") no-repeat 0 75%;
+  background: #ebeff2 url("../images/bg-signup.jpg") no-repeat 0 75%;
   background-size: cover;
   background-attachment: fixed;
 }
 
 /* individual page template (i.e. body.page-template-contact-php */
+.error404 .not-found div {
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+.error404 .not-found h1 {
+  margin-top: 150px;
+}
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/

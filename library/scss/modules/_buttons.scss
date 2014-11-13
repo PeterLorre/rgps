@@ -72,3 +72,85 @@ and it will create a button dependant on those variables.
   } // end active
 
 } // end blue button
+
+
+%button {
+  display: block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  color: $white;
+  line-height: 34px;
+  padding: .75em 3em;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  @include rounded(4px);
+  @include transition(background-color 0.14s ease-in-out);
+
+  @media (min-width: 768px) {
+    box-shadow: 4px 4px 0 rgba(0,0,0,.2);
+    &:hover, &:focus {
+      color: $white;
+      text-decoration: none;
+    }
+    &:active {
+        @include transition(all 0.1s ease-in-out);
+        transform: translate(1px, 2px);
+        box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+    }
+  }// end 768
+} // end button
+
+
+.btn-red-lrg{
+  @extend %button;
+  background: $red;
+  width: 200px;
+  clear: both;
+  margin: 0 auto 1em;
+  border: 3px solid $red;
+  &:hover, &:focus{
+    background: darken($red, 8%);
+  }
+}
+
+.btn-red-sml{
+  @extend %button;
+  background: $red;
+  width: 125px;
+  float: left;
+  font-size: 13px;
+  padding: .3em 0 .4em;
+  margin: 0 auto;
+  &:hover, &:focus{
+    background: darken($red, 8%);
+  }
+}
+
+.btn-cta-hero{
+  @extend %button;
+  margin: 3em auto 1em;
+  padding: .5em;
+  background: $green;
+  font-weight: 700;
+  width: 200px;
+  clear: both;
+  border: 3px solid $green;
+
+  @media (min-width: 768px) {
+    padding: .9em;
+    &:hover, &:focus{
+      border: 3px solid $dark-green;
+      background: darken($green, 10%);
+      color: $white;
+    }
+  }
+  @media (min-width: 1240px) {
+    position: absolute;
+    bottom: -25px;
+    right: 120px;
+    margin: 0;
+    padding: .75em;
+  }
+}

@@ -4,9 +4,9 @@
 
 				<section class="hero-main" class="m-all t-all d-all cf" role="main">
 					<div id="inner-content" class="wrap cf">
-						<img class="hero-diagram" src="<?php echo get_template_directory_uri(); ?>/library/images/logos.png" alt="diagram" />
+						<img class="hero-diagram" src="<?php echo get_template_directory_uri(); ?>/library/images/hero-diagram.png" alt="diagram" />
 						<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
-						<a class="cta-button-hero-main" href="<?php echo site_url(); ?>/sign-up/">Get Started Free!</a>
+						<a class="btn-cta-hero" href="<?php echo site_url(); ?>/sign-up/">Get Started Free!</a>
 					</div>
 				</section>
 
@@ -30,7 +30,7 @@
 							<blockquote>Don't worry. We'll put you in control of your online reviews.</blockquote>
 						</div>
 
-						<a href="<?php echo site_url(); ?>/pricing" class="how-cta">How it works</a>
+						<a href="<?php echo site_url(); ?>/pricing" class="btn-red-lrg">How it works</a>
 					
 					</section>
 					<div class="connect cf">

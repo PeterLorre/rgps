@@ -1052,6 +1052,91 @@ and it will create a button dependant on those variables.
   background-color: #7ca4d0;
 }
 
+.btn-red-lrg, .btn-red-sml, .btn-cta-hero {
+  display: block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  line-height: 34px;
+  padding: .75em 3em;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: background-color 0.14s ease-in-out;
+  transition: background-color 0.14s ease-in-out;
+}
+@media (min-width: 768px) {
+  .btn-red-lrg, .btn-red-sml, .btn-cta-hero {
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+  .btn-red-lrg:hover, .btn-red-sml:hover, .btn-cta-hero:hover, .btn-red-lrg:focus, .btn-red-sml:focus, .btn-cta-hero:focus {
+    color: white;
+    text-decoration: none;
+  }
+  .btn-red-lrg:active, .btn-red-sml:active, .btn-cta-hero:active {
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    transform: translate(1px, 2px);
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.btn-red-lrg {
+  background: #cd4948;
+  width: 200px;
+  clear: both;
+  margin: 0 auto 1em;
+  border: 3px solid #cd4948;
+}
+.btn-red-lrg:hover, .btn-red-lrg:focus {
+  background: #ba3433;
+}
+
+.btn-red-sml {
+  background: #cd4948;
+  width: 125px;
+  float: left;
+  font-size: 13px;
+  padding: .3em 0 .4em;
+  margin: 0 auto;
+}
+.btn-red-sml:hover, .btn-red-sml:focus {
+  background: #ba3433;
+}
+
+.btn-cta-hero {
+  margin: 3em auto 1em;
+  padding: .5em;
+  background: #77ba6b;
+  font-weight: 700;
+  width: 200px;
+  clear: both;
+  border: 3px solid #77ba6b;
+}
+@media (min-width: 768px) {
+  .btn-cta-hero {
+    padding: .9em;
+  }
+  .btn-cta-hero:hover, .btn-cta-hero:focus {
+    border: 3px solid #519a45;
+    background: #5aa54d;
+    color: white;
+  }
+}
+@media (min-width: 1240px) {
+  .btn-cta-hero {
+    position: absolute;
+    bottom: -25px;
+    right: 120px;
+    margin: 0;
+    padding: .75em;
+  }
+}
+
 /******************************************************************
 Site Name:
 Author:
@@ -1401,7 +1486,7 @@ style a page via class
   background: white;
   border-top: 4px solid #444444;
   border-bottom: 11px solid #444444;
-  background: white url(../images/bg-featured.jpg) no-repeat top left;
+  background: white url(../images/bg-hero.jpg) no-repeat top left;
 }
 .home .hero-main .hero-diagram {
   position: relative;
@@ -1442,7 +1527,7 @@ style a page via class
 .home .how-it-works div {
   padding: 0 .25em;
   background: rgba(255, 255, 255, 0.1);
-  margin: 1em 0;
+  margin: 1em 0 0;
 }
 .home .how-it-works div h3 {
   color: white;
@@ -1461,6 +1546,7 @@ style a page via class
   display: block;
 }
 .home .how-it-works div blockquote {
+  font-size: 16px;
   color: #f8f9fa;
   text-align: center;
   border-left: 0;
@@ -1585,32 +1671,16 @@ style a page via class
 .error404 .not-found {
   border-top: 10px solid #444444;
 }
-.error404 .not-found div {
-  -moz-transform: rotate(-10deg);
-  -o-transform: rotate(-10deg);
-  -ms-transform: rotate(-10deg);
-  -webkit-transform: rotate(-10deg);
-  transform: rotate(-10deg);
-}
 .error404 .not-found h1 {
-  color: white;
-  font-size: 169px;
-  letter-spacing: -.1em;
-  text-align: center;
-  font-weight: 700;
-  margin: 0;
-  text-shadow: 0px 14px 0 #444;
-}
-.error404 .not-found h2 {
   text-align: center;
   color: white;
   font-size: 87px;
   font-weight: 700;
-  margin-top: -51px;
+  margin-top: 50px;
   letter-spacing: -.1em;
   text-shadow: 0 10px 0 #444;
   margin-bottom: 0;
-  line-height: .7em;
+  line-height: .9em;
 }
 .error404 .not-found button {
   margin: 0 auto 1em;
@@ -1715,7 +1785,8 @@ a, a:visited {
   /* mobile tap color */
 }
 a:hover, a:focus, a:visited:hover, a:visited:focus {
-  color: #e8e8e8;
+  color: white;
+  text-decoration: none;
 }
 a:link, a:visited:link {
   /*
@@ -2328,16 +2399,16 @@ FOOTER STYLES
   color: #77ba6b;
   border-bottom: 2px solid #777777;
   padding-bottom: 5px;
-  margin: 1em 0 0;
+  margin: 1em 0 .5;
   font-size: 16px;
 }
 .footer-widgets ul {
   margin: 0;
 }
-.footer-widgets a {
+.footer-widgets li > a {
   display: block;
   text-decoration: none;
-  padding: .6em;
+  padding: .4em;
   padding-left: 0;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -2345,7 +2416,7 @@ FOOTER STYLES
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-.footer-widgets a:hover, .footer-widgets a:focus {
+.footer-widgets li > a:hover, .footer-widgets li > a:focus {
   background: rgba(255, 255, 255, 0.1);
   padding-left: .2em;
 }
@@ -2357,6 +2428,20 @@ FOOTER STYLES
   color: #c3a15a;
   font-size: 22px;
   border-bottom: none;
+}
+.footer-widgets .footer-trial .sign-up-today {
+  background: #cd4948;
+  border: 0;
+  border-radius: 4px;
+  padding: .75em 2em 1em;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.4);
+}
+.footer-widgets .footer-trial .sign-up-today a {
+  display: block;
+  text-decoration: none;
+}
+.footer-widgets .footer-trial .sign-up-today a:active {
+  border: 2px solid #cd4948;
 }
 
 /*
@@ -2445,6 +2530,17 @@ Login Form
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+}
+.login-modal-sm .wpcf7 .checkbox-remember {
+  display: block;
+  margin-top: .5em;
+}
+.login-modal-sm .wpcf7 .wpcf7-list-item {
+  margin: 0;
+}
+.login-modal-sm .wpcf7 .forgot-password {
+  color: #47823d;
+  float: right;
 }
 .login-modal-sm .wpcf7 .wpcf7-not-valid-tip {
   /*Red Text*/
@@ -2680,33 +2776,44 @@ you can add resource intensive styles.
   }
 
   .page-template-page-about-php #content {
-    background: #ebeff2 url("../images/about-bg.jpg") no-repeat 0 75%;
+    background: #ebeff2 url("../images/bg-about.jpg") no-repeat 0 75%;
     background-size: cover;
     background-attachment: fixed;
   }
 
   /* individual page template (i.e. body.page-template-contact-php */
   .page-template-page-pricing-php #content {
-    background: #ebeff2 url("../images/pricing-bg.jpg") no-repeat 0 75%;
+    background: #ebeff2 url("../images/bg-pricing.jpg") no-repeat 0 75%;
     background-size: cover;
     background-attachment: fixed;
   }
 
   /* individual page template (i.e. body.page-template-contact-php */
   .page-template-page-contact-php #content {
-    background: #ebeff2 url("../images/contact-bg.jpg") no-repeat 0 75%;
+    background: #ebeff2 url("../images/bg-contact.jpg") no-repeat 0 75%;
     background-size: cover;
     background-attachment: fixed;
   }
 
   /* individual page template (i.e. body.page-template-contact-php */
   .page-template-page-signup-php #content {
-    background: #ebeff2 url("../images/signup-bg.jpg") no-repeat 0 75%;
+    background: #ebeff2 url("../images/bg-signup.jpg") no-repeat 0 75%;
     background-size: cover;
     background-attachment: fixed;
   }
 
   /* individual page template (i.e. body.page-template-contact-php */
+  .error404 .not-found div {
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  .error404 .not-found h1 {
+    margin-top: 150px;
+  }
+
   /*********************
   LAYOUT & GRID STYLES
   *********************/
@@ -3048,7 +3155,7 @@ This is for the larger monitors and possibly full screen viewers.
     /*Footer Widgets*/
   }
   .footer .footer-widgets .widget {
-    width: 16%;
+    width: 15%;
   }
   .footer .footer-widgets .footer-trial {
     display: block;

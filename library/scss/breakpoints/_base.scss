@@ -43,7 +43,7 @@ style a page via class
 		background: $white;
 		border-top: 4px solid $dark-gray;
 		border-bottom: 11px solid $dark-gray;
-		background: $white url(../images/bg-featured.jpg) no-repeat top left;
+		background: $white url(../images/bg-hero.jpg) no-repeat top left;
 		.hero-diagram{
 			position: relative;
 			top: 25px;
@@ -84,7 +84,7 @@ style a page via class
 		div{
 			padding: 0 .25em;
 			background: rgba(255,255,255,.1);
-			margin: 1em 0;
+			margin: 1em 0 0;
 			h3{
 				color: $white;
 				margin: 1em auto;
@@ -102,6 +102,7 @@ style a page via class
 				display: block;
 			}
 			blockquote{
+				font-size: 16px;
 				color: $light-gray;
 				text-align: center;
 				border-left: 0;
@@ -221,28 +222,16 @@ style a page via class
 		background: $red;
 	.not-found{
 		border-top: 10px solid $dark-gray;
-		div{
-			@include rotate(-10);
-		}
 		h1{
-			color: $white;
-			font-size: 169px;
-			letter-spacing: -.1em;
-			text-align: center;
-			font-weight: 700;
-			margin: 0;
-			text-shadow: 0px 14px 0 #444;
-		}
-		h2{
 			text-align: center;
 			color: white;
 			font-size: 87px;
 			font-weight: 700;
-			margin-top: -51px;
+			margin-top: 50px;
 			letter-spacing: -.1em;
 			text-shadow: 0 10px 0 #444;
 			margin-bottom: 0;
-			line-height: .7em;
+			line-height: .9em;
 		}
 		button{
 			margin: 0 auto 1em;
@@ -353,6 +342,7 @@ a, a:visited {
 	/* on hover */
 	&:hover, &:focus {
 		color: $link-hover;
+		text-decoration: none;
 	}
 
 	/* on click */
@@ -1213,18 +1203,16 @@ FOOTER STYLES
 		color: $green;
 		border-bottom: 2px solid $gray;
 		padding-bottom: 5px;
-		margin: 1em 0 0;
+		margin: 1em 0 .5;
 		font-size: 16px;
 	}
 	ul{
 		margin: 0;
 	}
-	li{
-	}
-	a{	
+	li>a{	
 		display: block;
 		text-decoration: none;
-		padding: .6em;
+		padding: .4em;
 		padding-left: 0;
 		@include transition(all 0.2s ease-in-out);
 		@include rounded(3px);
@@ -1242,6 +1230,19 @@ FOOTER STYLES
 			color: $gold;
 			font-size: 22px;
 			border-bottom: none;
+		}
+		.sign-up-today{
+			background: #cd4948;border: 0;
+			border-radius: 4px;
+			padding: .75em 2em 1em;
+			box-shadow: 5px 5px 0 rgba(0,0,0,.4);
+			a{
+				display:block;
+				text-decoration: none;
+				&:active{
+					border: 2px solid $red;
+				}
+			}
 		}
 	}
 	.footer-blog{}
@@ -1352,6 +1353,17 @@ Login Form
 			background: $white;
 			padding: .3em;
 			@include rounded(50%);
+		}
+		.checkbox-remember{
+			display: block;
+			margin-top: .5em;
+		}
+		.wpcf7-list-item{
+			margin: 0;
+		}
+		.forgot-password{
+			color: #47823d;
+			float: right;
 		}
 		/*Alerts*/
 		.wpcf7-not-valid-tip{
