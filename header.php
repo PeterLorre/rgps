@@ -43,30 +43,53 @@
 
 		<div id="container">
 
-			<div class="top-menu cf">
-				<?php wp_nav_menu(array(
-				'container' => false,                           // remove nav container
-				'container_class' => 'menu cf',                 // class of container (should you choose to use it)
-				'menu' => __( 'The Top Menu', 'rgpstheme' ),  // nav name
-				'menu_class' => 'nav top-nav cf',               // adding custom nav class
-				'theme_location' => 'top-nav',                 // where it's located in the theme
-				'before' => '',                                 // before the menu
-				'after' => '',                                  // after the menu
-				'link_before' => '',                            // before each link
-				'link_after' => '',                             // after each link
-				'depth' => 0,                                   // limit the depth of the nav
-				'fallback_cb' => ''                             // fallback function (if there is one)
-				)); ?>
+			<div class="top-bar cf">
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-trigger="focus" data-target=".bs-navbar-collapse">
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+				</button>
+				<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+					<?php wp_nav_menu(array(
+					'container' => false,                           // remove nav container
+					'container_class' => 'menu cf',                 // class of container (should you choose to use it)
+					'menu' => __( 'The Primary Menu', 'rgpstheme' ),  // nav name
+					'menu_class' => 'nav primary-nav-mobile cf',               // adding custom nav class
+					'theme_location' => 'primary-nav',                 // where it's located in the theme
+					'before' => '',                                 // before the menu
+					'after' => '',                                  // after the menu
+					'link_before' => '',                            // before each link
+					'link_after' => '',                             // after each link
+					'depth' => 0,                                   // limit the depth of the nav
+					'fallback_cb' => ''                             // fallback function (if there is one)
+					)); ?>
 
-				<?php // Login Modal ?>
-				<div class="modal fade login-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-				  <div class="modal-dialog modal-sm">
-				    <div class="modal-content cf">
-				      <?php echo do_shortcode( '[contact-form-7 id="51" title="Member Login"]' ); ?>
-				    </div>
-				  </div>
+				</nav>
+
+				<div class="menu-login">
+					<?php wp_nav_menu(array(
+					'container' => false,                           // remove nav container
+					'container_class' => 'menu cf',                 // class of container (should you choose to use it)
+					'menu' => __( 'The Top Menu', 'rgpstheme' ),  // nav name
+					'menu_class' => 'nav top-nav cf',               // adding custom nav class
+					'theme_location' => 'top-nav',                 // where it's located in the theme
+					'before' => '',                                 // before the menu
+					'after' => '',                                  // after the menu
+					'link_before' => '',                            // before each link
+					'link_after' => '',                             // after each link
+					'depth' => 0,                                   // limit the depth of the nav
+					'fallback_cb' => ''                             // fallback function (if there is one)
+					)); ?>
+
+					<?php // Login Modal ?>
+					<div class="modal fade login-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+					  <div class="modal-dialog modal-sm">
+					    <div class="modal-content cf">
+					      <?php echo do_shortcode( '[contact-form-7 id="51" title="Member Login"]' ); ?>
+					    </div>
+					  </div>
+					</div>
 				</div>
-
 			</div>
 
 			<header class="header" role="banner">

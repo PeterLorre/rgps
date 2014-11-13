@@ -418,8 +418,11 @@ HEADER STYLES
 	position: relative;
 }
 
-.top-menu{
+.top-bar{
 	background: $dark-gray;
+}
+
+.menu-login{
 	ul{
 		float: right;
 	}
@@ -469,6 +472,25 @@ Primary Menu
 	bottom: 0;
 	@include rounded-top(8px);
 }
+
+.navbar-toggle{
+	float: left;
+	margin: 0;
+	.icon-bar{
+		background: $green;
+		height: 3px;
+	}
+}
+.primary-nav-mobile{
+	a{
+		font-size: 14px;
+		border-bottom: 1px solid $gray;
+		&:active{
+			background: $red;
+		}
+	}
+}
+
 
 /*********************
 BASE NAVIGATION STYLES

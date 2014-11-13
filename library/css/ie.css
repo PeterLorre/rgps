@@ -446,6 +446,10 @@ Primary Menu
   text-decoration: none;
 }
 
+.primary-nav-mobile {
+  display: none;
+}
+
 /*********************
 NAVIGATION STYLES
 *********************/

@@ -1857,16 +1857,17 @@ HEADER STYLES
   position: relative;
 }
 
-.top-menu {
+.top-bar {
   background: #444444;
 }
-.top-menu ul {
+
+.menu-login ul {
   float: right;
 }
-.top-menu li {
+.menu-login li {
   float: left;
 }
-.top-menu a {
+.menu-login a {
   font-size: 13px;
   float: left;
 }
@@ -1917,6 +1918,23 @@ Primary Menu
   border-top-right-radius: 8px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+.navbar-toggle {
+  float: left;
+  margin: 0;
+}
+.navbar-toggle .icon-bar {
+  background: #77ba6b;
+  height: 3px;
+}
+
+.primary-nav-mobile a {
+  font-size: 14px;
+  border-bottom: 1px solid #777777;
+}
+.primary-nav-mobile a:active {
+  background: #cd4948;
 }
 
 /*********************
@@ -2860,6 +2878,10 @@ you can add resource intensive styles.
   .primary-nav a:hover, .primary-nav a:focus {
     background: #d34f4f;
     text-decoration: none;
+  }
+
+  .primary-nav-mobile {
+    display: none;
   }
 
   /*********************
