@@ -1089,11 +1089,13 @@ and it will create a button dependant on those variables.
   background: #cd4948;
   width: 200px;
   clear: both;
-  margin: 0 auto 1em;
+  margin: 1em auto 1em;
   border: 3px solid #cd4948;
 }
-.btn-red-lrg:hover, .btn-red-lrg:focus {
-  background: #ba3433;
+@media (min-width: 768px) {
+  .btn-red-lrg:hover, .btn-red-lrg:focus {
+    background: #ba3433;
+  }
 }
 
 .btn-red-sml {
@@ -1104,8 +1106,10 @@ and it will create a button dependant on those variables.
   padding: .3em 0 .4em;
   margin: 0 auto;
 }
-.btn-red-sml:hover, .btn-red-sml:focus {
-  background: #ba3433;
+@media (min-width: 768px) {
+  .btn-red-sml:hover, .btn-red-sml:focus {
+    background: #ba3433;
+  }
 }
 
 .btn-cta-hero {
