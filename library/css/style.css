@@ -2425,8 +2425,8 @@ FOOTER STYLES
   text-decoration: none;
   padding: .4em;
   padding-left: 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.13s ease-in-out;
+  transition: all 0.13s ease-in-out;
 }
 .footer-widgets span {
   font-size: 12px;
@@ -3005,7 +3005,8 @@ you can add resource intensive styles.
 
   .footer-widgets li > a:hover, .footer-widgets li > a:focus {
     background: #cd4948;
-    padding-left: .2em;
+    padding-left: .25em;
+    box-shadow: 3px 3px 0 #333;
   }
 
   .footer-links ul li {

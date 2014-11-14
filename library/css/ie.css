@@ -576,7 +576,8 @@ mobile. Make sure to double check these!
 
 .footer-widgets li > a:hover, .footer-widgets li > a:focus {
   background: #cd4948;
-  padding-left: .2em;
+  padding-left: .25em;
+  box-shadow: 3px 3px 0 #333;
 }
 
 .footer-links ul li {

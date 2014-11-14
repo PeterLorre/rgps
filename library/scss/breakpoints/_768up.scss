@@ -476,7 +476,8 @@ mobile. Make sure to double check these!
 	li>a{	
 	&:hover, &:focus{
 		background: $red;
-		padding-left: .2em;
+		padding-left: .25em;
+		box-shadow: 3px 3px 0 #333;
 	}
 }
 }
