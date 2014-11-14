@@ -201,7 +201,7 @@ style a page via class
 			font-size: 21px;
 			text-align: center;
 			padding: .5em;
-			border-radius: 6px;
+			// border-radius: 6px;
 			margin: 0 0 .5em .5em;
 			box-shadow: 7px 7px 0 rgba(0,0,0,.2);
 			@include transition(all 0.2s ease-in-out);
@@ -239,7 +239,7 @@ style a page via class
 			background: #444;
 			padding: 1.3em 3em;
 			border: 0;
-			@include rounded(4px);
+			// @include rounded(4px);
 			&:active{
 				outline: none;
 			}
@@ -434,7 +434,7 @@ HEADER STYLES
 		float: left;
 	}
 	a{
-		font-size: 13px;
+		font-size: 14px;
 		float: left;
 		padding: 1em!important;
 	}
@@ -486,7 +486,7 @@ Primary Menu
 	position: absolute;
 	right: 0;
 	bottom: 0;
-	@include rounded-top(8px);
+	// @include rounded-top(8px);
 }
 
 .navbar-toggle{
@@ -1253,7 +1253,7 @@ FOOTER STYLES
 		padding: .4em;
 		padding-left: 0;
 		@include transition(all 0.2s ease-in-out);
-		@include rounded(3px);
+		// @include rounded(3px);
 	}
 	span{
 		font-size: 12px;

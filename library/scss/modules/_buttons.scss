@@ -85,11 +85,11 @@ and it will create a button dependant on those variables.
   border: 0;
   outline: none;
   cursor: pointer;
-  @include rounded(4px);
+  box-shadow: 4px 4px 0 rgba(0,0,0,.2);
+  // @include rounded(4px);
   @include transition(background-color 0.14s ease-in-out);
 
   @media (min-width: 768px) {
-    box-shadow: 4px 4px 0 rgba(0,0,0,.2);
     &:hover, &:focus {
       color: $white;
       text-decoration: none;
@@ -109,7 +109,7 @@ and it will create a button dependant on those variables.
   width: 200px;
   clear: both;
   margin: 1em auto 1em;
-  border: 3px solid $red;
+  // border: 3px solid $red;
   
   @media (min-width: 768px) {
     &:hover, &:focus{
@@ -142,12 +142,12 @@ and it will create a button dependant on those variables.
   font-weight: 700;
   width: 200px;
   clear: both;
-  border: 3px solid $green;
+  // border: 3px solid $green;
 
   @media (min-width: 768px) {
     padding: .9em;
     &:hover, &:focus{
-      border: 3px solid $dark-green;
+      // border: 3px solid $dark-green;
       background: darken($green, 10%);
       color: $white;
     }
