@@ -175,27 +175,6 @@ HEADER STYLES
 *********************/
 
 .header {}
-.social-icons-sml{
-	display: block;
-	float: left;
-	ul{
-		margin: .5em auto .5em 1em;
-	}
-	li{
-		float: left;
-	}
-	a{
-		color: $green;
-		padding: .5em;
-		font-size: 18px;
-		&:hover, &:active{
-			color: lighten($green, 9%);
-		}
-	}
-}
-.navbar-collapse.collapse{
-	display: none!important;
-}
 // .menu-login{
 // 	.current-menu-item{
 // 		background: $red;
@@ -218,20 +197,22 @@ HEADER STYLES
 
 	.phone-header{
 		color: $soft-white;
-		font-size: 25px;
+		font-size: 47px;
 		text-shadow: 2px 2px rgba(0,0,0,.2);
-		margin: .3em 0 1em 1em;
+		margin: .3em 20px 1em 1em;
 	}
 
 /*********************
 Primary Menu
 *********************/
 .primary-nav{
-	display: block;
+	display: none;
 	border-bottom: 2px solid $green;
 	a{
 		@include transition(all .2s ease-in-out);
-		font-size: .85em;
+		display: block;
+		text-align: center;
+		width: 110px;
 		&:hover, &:focus{
 			background: rgb(211, 79, 79);
 			text-decoration: none;
@@ -239,7 +220,15 @@ Primary Menu
 	}
 }
 .primary-nav-mobile{
-	display: none;
+	li>a{
+		width: 100px;
+		text-align: center;
+		padding: 1em;
+	}
+}
+
+.navbar-collapse{
+	float: left;
 }
 
 /*********************

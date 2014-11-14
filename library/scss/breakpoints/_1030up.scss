@@ -54,6 +54,35 @@ style a page via class
 #inner-header{
 	height: 147px;
 }
+.social-icons-sml{
+	display: block;
+	float: left;
+	ul{
+		margin: .5em auto .5em 1em;
+	}
+	li{
+		float: left;
+	}
+	a{
+		color: $soft-white;
+		padding: .5em;
+		font-size: 18px;
+		width: 50px;
+		display: block;
+		&:hover, &:active{
+			color: $white;
+			background: $red;
+		}
+	}
+}
+.menu-login{
+	a{
+		padding: 1.4em!important;
+	}
+}
+.navbar-collapse.collapse{
+	display: none!important;
+}
 
 .logo {
 
@@ -64,7 +93,7 @@ style a page via class
 }
 
 .phone-header{
-	font-size: 47px;
+		margin: .3em 0 1em 1em;
 
 }
 .connect{
@@ -85,7 +114,8 @@ style a page via class
 Primary Menu
 *********************/
 .primary-nav{
-	padding: 0 1em;
+	// padding: 0 1em;
+	display: block;
 	a{
 		font-size: 1em;
 	}

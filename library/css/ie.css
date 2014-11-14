@@ -408,29 +408,6 @@ LAYOUT & GRID STYLES
 /*********************
 HEADER STYLES
 *********************/
-.social-icons-sml {
-  display: block;
-  float: left;
-}
-.social-icons-sml ul {
-  margin: .5em auto .5em 1em;
-}
-.social-icons-sml li {
-  float: left;
-}
-.social-icons-sml a {
-  color: #77ba6b;
-  padding: .5em;
-  font-size: 18px;
-}
-.social-icons-sml a:hover, .social-icons-sml a:active {
-  color: #94c98a;
-}
-
-.navbar-collapse.collapse {
-  display: none !important;
-}
-
 #inner-header {
   height: 115px;
 }
@@ -447,30 +424,38 @@ HEADER STYLES
 
 .phone-header {
   color: #ebeff2;
-  font-size: 25px;
+  font-size: 47px;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
-  margin: .3em 0 1em 1em;
+  margin: .3em 20px 1em 1em;
 }
 
 /*********************
 Primary Menu
 *********************/
 .primary-nav {
-  display: block;
+  display: none;
   border-bottom: 2px solid #77ba6b;
 }
 .primary-nav a {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  font-size: .85em;
+  display: block;
+  text-align: center;
+  width: 110px;
 }
 .primary-nav a:hover, .primary-nav a:focus {
   background: #d34f4f;
   text-decoration: none;
 }
 
-.primary-nav-mobile {
-  display: none;
+.primary-nav-mobile li > a {
+  width: 100px;
+  text-align: center;
+  padding: 1em;
+}
+
+.navbar-collapse {
+  float: left;
 }
 
 /*********************
@@ -640,13 +625,43 @@ style a page via class
   height: 147px;
 }
 
+.social-icons-sml {
+  display: block;
+  float: left;
+}
+.social-icons-sml ul {
+  margin: .5em auto .5em 1em;
+}
+.social-icons-sml li {
+  float: left;
+}
+.social-icons-sml a {
+  color: #ebeff2;
+  padding: .5em;
+  font-size: 18px;
+  width: 50px;
+  display: block;
+}
+.social-icons-sml a:hover, .social-icons-sml a:active {
+  color: white;
+  background: #cd4948;
+}
+
+.menu-login a {
+  padding: 1.4em !important;
+}
+
+.navbar-collapse.collapse {
+  display: none !important;
+}
+
 .logo img {
   width: 100%;
   margin: 0 auto;
 }
 
 .phone-header {
-  font-size: 47px;
+  margin: .3em 0 1em 1em;
 }
 
 .connect {
@@ -668,7 +683,7 @@ style a page via class
 Primary Menu
 *********************/
 .primary-nav {
-  padding: 0 1em;
+  display: block;
 }
 .primary-nav a {
   font-size: 1em;

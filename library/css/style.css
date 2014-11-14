@@ -1063,16 +1063,11 @@ and it will create a button dependant on those variables.
   border: 0;
   outline: none;
   cursor: pointer;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: background-color 0.14s ease-in-out;
   transition: background-color 0.14s ease-in-out;
 }
 @media (min-width: 768px) {
-  .btn-red-lrg, .btn-red-sml, .btn-cta-hero {
-    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
-  }
   .btn-red-lrg:hover, .btn-red-sml:hover, .btn-cta-hero:hover, .btn-red-lrg:focus, .btn-red-sml:focus, .btn-cta-hero:focus {
     color: white;
     text-decoration: none;
@@ -1090,7 +1085,6 @@ and it will create a button dependant on those variables.
   width: 200px;
   clear: both;
   margin: 1em auto 1em;
-  border: 3px solid #cd4948;
 }
 @media (min-width: 768px) {
   .btn-red-lrg:hover, .btn-red-lrg:focus {
@@ -1119,14 +1113,12 @@ and it will create a button dependant on those variables.
   font-weight: 700;
   width: 200px;
   clear: both;
-  border: 3px solid #77ba6b;
 }
 @media (min-width: 768px) {
   .btn-cta-hero {
     padding: .9em;
   }
   .btn-cta-hero:hover, .btn-cta-hero:focus {
-    border: 3px solid #519a45;
     background: #5aa54d;
     color: white;
   }
@@ -1645,7 +1637,6 @@ style a page via class
   font-size: 21px;
   text-align: center;
   padding: .5em;
-  border-radius: 6px;
   margin: 0 0 .5em .5em;
   box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.2s ease-in-out;
@@ -1692,9 +1683,6 @@ style a page via class
   background: #444;
   padding: 1.3em 3em;
   border: 0;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
 }
 .error404 .not-found button:active {
   outline: none;
@@ -1876,7 +1864,7 @@ HEADER STYLES
   float: left;
 }
 .menu-login a {
-  font-size: 13px;
+  font-size: 14px;
   float: left;
   padding: 1em !important;
 }
@@ -1927,18 +1915,6 @@ Primary Menu
   position: absolute;
   right: 0;
   bottom: 0;
-  -webkit-border-top-left-radius: 8px;
-  -webkit-border-top-right-radius: 8px;
-  -webkit-border-bottom-right-radius: 0;
-  -webkit-border-bottom-left-radius: 0;
-  -moz-border-radius-topleft: 8px;
-  -moz-border-radius-topright: 8px;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-bottomleft: 0;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
 }
 
 .navbar-toggle {
@@ -2451,9 +2427,6 @@ FOOTER STYLES
   padding-left: 0;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
 }
 .footer-widgets span {
   font-size: 12px;
@@ -2864,29 +2837,6 @@ you can add resource intensive styles.
   /*********************
   HEADER STYLES
   *********************/
-  .social-icons-sml {
-    display: block;
-    float: left;
-  }
-  .social-icons-sml ul {
-    margin: .5em auto .5em 1em;
-  }
-  .social-icons-sml li {
-    float: left;
-  }
-  .social-icons-sml a {
-    color: #77ba6b;
-    padding: .5em;
-    font-size: 18px;
-  }
-  .social-icons-sml a:hover, .social-icons-sml a:active {
-    color: #94c98a;
-  }
-
-  .navbar-collapse.collapse {
-    display: none !important;
-  }
-
   #inner-header {
     height: 115px;
   }
@@ -2903,30 +2853,38 @@ you can add resource intensive styles.
 
   .phone-header {
     color: #ebeff2;
-    font-size: 25px;
+    font-size: 47px;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
-    margin: .3em 0 1em 1em;
+    margin: .3em 20px 1em 1em;
   }
 
   /*********************
   Primary Menu
   *********************/
   .primary-nav {
-    display: block;
+    display: none;
     border-bottom: 2px solid #77ba6b;
   }
   .primary-nav a {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    font-size: .85em;
+    display: block;
+    text-align: center;
+    width: 110px;
   }
   .primary-nav a:hover, .primary-nav a:focus {
     background: #d34f4f;
     text-decoration: none;
   }
 
-  .primary-nav-mobile {
-    display: none;
+  .primary-nav-mobile li > a {
+    width: 100px;
+    text-align: center;
+    padding: 1em;
+  }
+
+  .navbar-collapse {
+    float: left;
   }
 
   /*********************
@@ -3104,13 +3062,43 @@ you can add resource intensive styles.
     height: 147px;
   }
 
+  .social-icons-sml {
+    display: block;
+    float: left;
+  }
+  .social-icons-sml ul {
+    margin: .5em auto .5em 1em;
+  }
+  .social-icons-sml li {
+    float: left;
+  }
+  .social-icons-sml a {
+    color: #ebeff2;
+    padding: .5em;
+    font-size: 18px;
+    width: 50px;
+    display: block;
+  }
+  .social-icons-sml a:hover, .social-icons-sml a:active {
+    color: white;
+    background: #cd4948;
+  }
+
+  .menu-login a {
+    padding: 1.4em !important;
+  }
+
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+
   .logo img {
     width: 100%;
     margin: 0 auto;
   }
 
   .phone-header {
-    font-size: 47px;
+    margin: .3em 0 1em 1em;
   }
 
   .connect {
@@ -3132,7 +3120,7 @@ you can add resource intensive styles.
   Primary Menu
   *********************/
   .primary-nav {
-    padding: 0 1em;
+    display: block;
   }
   .primary-nav a {
     font-size: 1em;
