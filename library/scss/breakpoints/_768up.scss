@@ -175,11 +175,14 @@ HEADER STYLES
 *********************/
 
 .header {}
-// .menu-login{
-// 	.current-menu-item{
-// 		background: $red;
-// 	}
-// }
+.menu-login{
+	li>a{
+		@include transition(all .2s ease-in-out);
+		&:hover, &:focus{
+			background: $red;
+		}
+	}
+}
 #inner-header{
 	height: 115px;
 }
@@ -224,6 +227,10 @@ Primary Menu
 		width: 100px;
 		text-align: center;
 		padding: 1em;
+		@include transition(all 0.2s ease-in-out);
+		&:hover, &:focus{
+			background: $red;
+		}
 	}
 }
 
@@ -254,7 +261,6 @@ NAVIGATION STYLES
 			*/
 			&:hover, &:focus {
 				color: $white;
-				background: rgb(211, 79, 79);
 				// text-decoration: underline;
 			}
 		}
@@ -473,13 +479,16 @@ mobile. Make sure to double check these!
 	}
 }
 .footer-widgets{
-	li>a{	
-	&:hover, &:focus{
-		background: $red;
-		padding-left: .25em;
-		box-shadow: 3px 3px 0 #333;
+	.footer-trial{
+		margin-bottom: 0;
 	}
-}
+	li>a{	
+		@include transition(all 0.2s ease-in-out);
+		&:hover, &:focus{
+			background: $red;
+			padding-left: .25em;
+		}
+	}
 }
 
 .footer-links {

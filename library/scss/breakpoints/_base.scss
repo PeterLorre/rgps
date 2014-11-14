@@ -1252,7 +1252,6 @@ FOOTER STYLES
 		text-decoration: none;
 		padding: .4em;
 		padding-left: 0;
-		@include transition(all 0.13s ease-in-out);
 		// @include rounded(3px);
 	}
 	span{
@@ -1260,6 +1259,7 @@ FOOTER STYLES
 		font-style: italic;
 	}
 	.footer-trial{
+		margin-bottom: 2em;
 		h4{
 			color: $gold;
 			font-size: 22px;

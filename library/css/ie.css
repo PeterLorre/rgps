@@ -408,6 +408,14 @@ LAYOUT & GRID STYLES
 /*********************
 HEADER STYLES
 *********************/
+.menu-login li > a {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.menu-login li > a:hover, .menu-login li > a:focus {
+  background: #cd4948;
+}
+
 #inner-header {
   height: 115px;
 }
@@ -452,6 +460,11 @@ Primary Menu
   width: 100px;
   text-align: center;
   padding: 1em;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.primary-nav-mobile li > a:hover, .primary-nav-mobile li > a:focus {
+  background: #cd4948;
 }
 
 .navbar-collapse {
@@ -487,7 +500,6 @@ NAVIGATION STYLES
 }
 .nav li a:hover, .nav li a:focus {
   color: white;
-  background: #d34f4f;
 }
 .nav li ul.sub-menu,
 .nav li ul.children {
@@ -574,10 +586,16 @@ mobile. Make sure to double check these!
   padding-left: 15px;
 }
 
+.footer-widgets .footer-trial {
+  margin-bottom: 0;
+}
+.footer-widgets li > a {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
 .footer-widgets li > a:hover, .footer-widgets li > a:focus {
   background: #cd4948;
   padding-left: .25em;
-  box-shadow: 3px 3px 0 #333;
 }
 
 .footer-links ul li {
@@ -642,9 +660,12 @@ style a page via class
   font-size: 18px;
   width: 50px;
   display: block;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .social-icons-sml a:hover, .social-icons-sml a:active {
   color: white;
+  padding-left: .75em;
   background: #cd4948;
 }
 
