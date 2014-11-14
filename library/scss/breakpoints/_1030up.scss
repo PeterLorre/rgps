@@ -91,11 +91,13 @@ style a page via class
 	img{
 		width: 100%;
 		margin: 0 auto;
+		left: 0;
 	}
 }
 
 .phone-header{
-		margin: .3em 0 1em 1em;
+	display: block;
+	margin: .3em 0 1em 1em;
 
 }
 .connect{
@@ -115,11 +117,15 @@ style a page via class
 /*********************
 Primary Menu
 *********************/
-.primary-nav{
+.nav.primary-nav{
 	// padding: 0 1em;
 	display: block;
 	a{
 		font-size: 1em;
+		&:hover, &:focus{
+			// text-decoration: underline;
+			background: rgba(0,0,0,.05);
+		}
 	}
 }
 

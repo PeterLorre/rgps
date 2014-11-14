@@ -195,10 +195,12 @@ HEADER STYLES
 			z-index: 2;
 			width: 400px;
 			margin: 0;
+			left: 20%;
 		}
 	}
 
 	.phone-header{
+		display: none;
 		color: $soft-white;
 		font-size: 47px;
 		text-shadow: 2px 2px rgba(0,0,0,.2);
